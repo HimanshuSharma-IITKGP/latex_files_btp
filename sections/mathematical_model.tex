@@ -13,7 +13,6 @@
 \section{Mathematical Formulation}
 The geometry considered is a thin film of Silicon in the domain $ -L/2 \le X \le L/2$ and $0 \le Y \le H$. Consider a certain particle, initially located at the coordinate \textbf{X}. During deformation, this particle follows a path 
 
-\input{./equations/Mel_mat.tex}
 
 \begin{gather}
 \x = \x(\X,t)
@@ -21,9 +20,9 @@ The geometry considered is a thin film of Silicon in the domain $ -L/2 \le X \le
 
 \vspace{0.25cm}
 Let $\u(\X, t)$ be the displacement of a material particle located at $\X$. Then
-\begin{gather}
+\begin{align}
     \u(\X, t) = \x(\X, t) - \X = [u(\X, t), v(\X, t), w(\X, t)]^{\T}
-\end{gather}
+\end{align}
 
 Let the deformation gradient be denoted by $\F$.
 \begin{align}
@@ -81,7 +80,7 @@ since, det($\F^\p$) = 1
 
 \begin{align}
     \F^\inel &= \F^\p \F^\c\\
-    \F^\el &=  \F \inv{(\F^\p \F^\c)}
+    \F^\el &=  \F \inv{\F^\p \F^\c}
 \end{align}
 
 
@@ -104,16 +103,12 @@ Let $\PK$ and $\PKS$ denote the first and second Piola-Kirchhoff stress tensors 
 \end{align}
 
 \begin{align}
-    \PKS^\el &= \jc( 2 \muSic \E^\el + \lamSic \tr{\E^\el}\I )\\
-    \PKS &= \inv{\F^\c} \inv{\F^\p} \PKS^\el \invT{\F^\p} \invT{\F^\c} 
+    \PKS^\el &= \jc[2 \muSic \E^\el + \lamSic \tr{\E^\el}\I ]\\
+    \PKS &= \inv{\F^\c} \inv{\F^\p} \PKS^\el \invT{\F^\p} \invT{\F^\c} \\
+    \PK &= \F \PKS 
 \end{align}
 
 
-
-
-\begin{align}
-    \PK &= \F \PKS \\
-\end{align}
 
 
 Let $\CS$ denote the Cauchy stress tensor. Then
@@ -136,61 +131,61 @@ Let $\DCS$ denote the deviatoric part of the Cauchy stress, $\CS$; then
 Let $\sigmaeff$ denote the von Mises stress. Then:
 
 \begin{align}
-    \sigmaeff = \sqrt{\fc{3}{2}{(\tau^2_{11} + \tau^2_{22} + \tau^2_{33}} + 2+\tau^2_{12})}
+    \sigmaeff = \sqrt{\fc{3}{2}{(\tau^2_{11} + \tau^2_{22} + \tau^2_{33}} + 2\tau^2_{12})}
 \end{align}
 
-\subsection{CZM Equations in Deepro's thesis}
-\begin{align}
-    \Delta &= \sqrt{\Delta_n^2 + \Delta_t^2}\\
-    T_n &= K_n(1-d)\langle \Delta_n \rangle \\
-    T_t &= K_t(1-d)\Delta_t\\
-d &= \begin{cases}
-    0 & \text{if } \Delta < \delta_{e, c} \\
-    \fc{\delta{e}}{\Delta} \left( \fc{ \Delta - \delta_{e, c}}{\delta{e} - \delta_{e, c}} \right)  & \text{if } \delta_{e, c}< \Delta< \delta{e}\\
-    1 & \text{if }\Delta>\delta_{e}
-\end{cases}\\
-\delta_e &\neq \sqrt{\left(\fc{2 G_n}{\sigma_{\rm{max}}}\right)^2 + \left(\fc{2 G_t}{\tau_{\rm{max}}}\right)^2 }\\
-\delta_{e, c} &\neq \sqrt{\left(\fc{\sigma_{max}}{K_n}\right)^2 + \left(\fc{\tau_{max}}{K_t}\right)^2 }\\
-\end{align}
-
-
-
-\subsection{CZM Equations in COMSOL}
-\begin{align}
-\bm{u} &= \{0, 0, \langle g_n \rangle \} + \mathbf{T}_b^{-\T} \cdot \Delta \bm{g}_t\\
-u_m &= \|\bm{u}\|\\
-u_{\text{m, max}} &= \text{max}(u_m, u_{\text{m, max}}^{\text{old}}) \text{ - same over the boundary or varies locally?}\\
-\bm{f} &= \bm{k} \bm{u} (1-d) \text{ ; Nominal traction}\\
-u_{\text{0t}} &= \fc{\sigma_{0t}}{k_{\rm{n}}} \\
-u_{\text{0s}} &= \fc{\sigma_{0s}}{k_{\rm{t}}}\\
-u_{\text{0m}} &= u_{\text{0t}} u_{\text{0s}} \sqrt{\fc{{u_m}^2}{\uI^2 u_{\text{0s}}^2 + \uII^2 u_{\text{0t}}^2 }} \text{ - why does it contain time varying quantities?}\\
-\beta &= \fc{\uII}{u_{\rm{I}}} \text{ - constant ?}\\
-u_{\text {mf}} &=
-    \begin{cases}
-        \fc{2(1+\beta^2)}{u_{\text{0m}}}\left[ \left(  \fc{k_n}{G_{ct}} \right)^\alpha + \left(\fc{\beta^2 k_t}{G_{cs}} \right)^\alpha \right]^{-\fc{1}{\alpha}} & \text{if } u_{\rm{I}} > 0 \\
-        \fc{2G_{\rm{cs}}}{\sigma_s}& \text{if } u_{\rm{I}} < 0 
-    \end{cases}\\
+% \subsection{CZM Equations in Deepro's thesis}
+% \begin{align}
+%     \Delta &= \sqrt{\Delta_n^2 + \Delta_t^2}\\
+%     T_n &= K_n(1-d)\langle \Delta_n \rangle \\
+%     T_t &= K_t(1-d)\Delta_t\\
 % d &= \begin{cases}
-%     0 & \text{if } u_{\text{m, max}}<u_{\text{0m}} \\
-%     \fc{u_{\text{fm}}}{ u_{\text{m, max}}} \left( \fc{u_{\text{m, max}} - u_{\text{0m}}}{u_{\text{fm}} - u_{\text{0m}} \right) } & \text{if } u_{\text{0m}}<u_{\text{m, max}}<u_{\text{fm}}\\
-%     1 & \text{if } u_{\text{m, max}}>u_{\text{fm}}
-% \end{cases}
-\end{align}
-\subsubsection{variable names in COMSOL}
+%     0 & \text{if } \Delta < \delta_{e, c} \\
+%     \fc{\delta{e}}{\Delta} \left( \fc{ \Delta - \delta_{e, c}}{\delta{e} - \delta_{e, c}} \right)  & \text{if } \delta_{e, c}< \Delta< \delta{e}\\
+%     1 & \text{if }\Delta>\delta_{e}
+% \end{cases}\\
+% \delta_e &\neq \sqrt{\left(\fc{2 G_n}{\sigma_{\rm{max}}}\right)^2 + \left(\fc{2 G_t}{\tau_{\rm{max}}}\right)^2 }\\
+% \delta_{e, c} &\neq \sqrt{\left(\fc{\sigma_{max}}{K_n}\right)^2 + \left(\fc{\tau_{max}}{K_t}\right)^2 }\\
+% \end{align}
 
-Variables in Decohesion node
-\begin{align}
-    u0t &= \fc{\sigma_t}{k_n} \text{, Damage initiation displacement, tension} \\
-    u0s &= \fc{\sigma_s}{k_{teq}} \text{, Damage initiation displacement, Shear}\\
-    u0m_{ap1} &= \text{ Damage initiation displacement, Mixed Mode}\\
-    uft &= \fc{2 G_{ct}}{\sigma_t} \text{, Failure displacement, tension} \\
-    ufs &= \fc{2 G_{cs}}{\sigma_s} \text{, Failure displacement, Shear}\\
-    ufm_{ap1} &= \text{ Failure displacement, Mixed Mode}\\
-    u_{I_{ap1}} &= \text{ Mode I displacement jump}\\
-    u_{II_{ap1}} &= \text{ Mode II displacement jump}\\
-    dmg_{ap1} &= dmg = \text{Damage}\\
-    dmg_{ratio_{ap1}} &= \fc{um_{max_{ap1}} - u0m_{ap1}}{ufm_{ap1}-u0m_{ap1}}, \text{ Damage evolution ratio}
-\end{align}
+
+
+% \subsection{CZM Equations in COMSOL}
+% \begin{align}
+% \bm{u} &= \{0, 0, \langle g_n \rangle \} + \mathbf{T}_b^{-\T} \cdot \Delta \bm{g}_t\\
+% u_m &= \|\bm{u}\|\\
+% u_{\text{m, max}} &= \text{max}(u_m, u_{\text{m, max}}^{\text{old}}) \text{ - same over the boundary or varies locally?}\\
+% \bm{f} &= \bm{k} \bm{u} (1-d) \text{ ; Nominal traction}\\
+% u_{\text{0t}} &= \fc{\sigma_{0t}}{k_{\rm{n}}} \\
+% u_{\text{0s}} &= \fc{\sigma_{0s}}{k_{\rm{t}}}\\
+% u_{\text{0m}} &= u_{\text{0t}} u_{\text{0s}} \sqrt{\fc{{u_m}^2}{\uI^2 u_{\text{0s}}^2 + \uII^2 u_{\text{0t}}^2 }} \text{ - why does it contain time varying quantities?}\\
+% \beta &= \fc{\uII}{u_{\rm{I}}} \text{ - constant ?}\\
+% u_{\text {mf}} &=
+%     \begin{cases}
+%         \fc{2(1+\beta^2)}{u_{\text{0m}}}\left[ \left(  \fc{k_n}{G_{ct}} \right)^\alpha + \left(\fc{\beta^2 k_t}{G_{cs}} \right)^\alpha \right]^{-\fc{1}{\alpha}} & \text{if } u_{\rm{I}} > 0 \\
+%         \fc{2G_{\rm{cs}}}{\sigma_s}& \text{if } u_{\rm{I}} < 0 
+%     \end{cases}\\
+% % d &= \begin{cases}
+% %     0 & \text{if } u_{\text{m, max}}<u_{\text{0m}} \\
+% %     \fc{u_{\text{fm}}}{ u_{\text{m, max}}} \left( \fc{u_{\text{m, max}} - u_{\text{0m}}}{u_{\text{fm}} - u_{\text{0m}} \right) } & \text{if } u_{\text{0m}}<u_{\text{m, max}}<u_{\text{fm}}\\
+% %     1 & \text{if } u_{\text{m, max}}>u_{\text{fm}}
+% % \end{cases}
+% \end{align}
+% \subsubsection{variable names in COMSOL}
+
+% Variables in Decohesion node
+% \begin{align}
+%     u0t &= \fc{\sigma_t}{k_n} \text{, Damage initiation displacement, tension} \\
+%     u0s &= \fc{\sigma_s}{k_{teq}} \text{, Damage initiation displacement, Shear}\\
+%     u0m_{ap1} &= \text{ Damage initiation displacement, Mixed Mode}\\
+%     uft &= \fc{2 G_{ct}}{\sigma_t} \text{, Failure displacement, tension} \\
+%     ufs &= \fc{2 G_{cs}}{\sigma_s} \text{, Failure displacement, Shear}\\
+%     ufm_{ap1} &= \text{ Failure displacement, Mixed Mode}\\
+%     u_{I_{ap1}} &= \text{ Mode I displacement jump}\\
+%     u_{II_{ap1}} &= \text{ Mode II displacement jump}\\
+%     dmg_{ap1} &= dmg = \text{Damage}\\
+%     dmg_{ratio_{ap1}} &= \fc{um_{max_{ap1}} - u0m_{ap1}}{ufm_{ap1}-u0m_{ap1}}, \text{ Damage evolution ratio}
+% \end{align}
 Stress equilibrium equation:
 
 \begin{gather}
@@ -209,11 +204,11 @@ Mass conservation equation:
     \tX = X/H && \tY = Y/H \\
     \td{t} = D_0 t/H^2 && \tmusi, \tlamsi = \mu_{\text{si}}/E_0, \lambda_{\text{si}}/E_0 \\
     \td{E}(c) = E_{\text{si}}(1 + \eta_{\rm{E}} \chi_{\rm{max}} \td{c})/E_0 \text{, where }  E_0 = \fc{R_g T}{V_m^b} \\
-    \tsigma{0} = \fc{\sigma_0}{E_0}\\
-    \td{K} = \fc{K H}{E_0} \\
-    \td{G}_0 = \fc{G_0}{H E_0} \\
-    \td{\delta}_{\text{initiation}} = \fc{\delta_{\text{initiation}}}{H}\\
-    \td{\delta}_{\text{failure}} = \fc{\delta_{\text{failure}}}{H}
+    % \tsigma{0} = \fc{\sigma_0}{E_0}\\
+    % \td{K} = \fc{K H}{E_0} \\
+    % \td{G}_0 = \fc{G_0}{H E_0} \\
+    % \td{\delta}_{\text{initiation}} = \fc{\delta_{\text{initiation}}}{H}\\
+    % \td{\delta}_{\text{failure}} = \fc{\delta_{\text{failure}}}{H}
 \end{align*}
 
 
@@ -241,83 +236,91 @@ Mass conservation equation:
 \end{bmatrix}
 \end{align}
 
-\begin{align}
-    \tFel{11} &= (\jc)^{-1/3} \lamzz (\tF{11} \lamyy - \tF{12} \lamyx)\\
-   \tFel{12} &= (\jc)^{-1/3} \lamzz (\tF{12} \lamxx - \tF{11} \lamxy)\\
-   \tFel{21} &= (\jc)^{-1/3} \lamzz (\tF{21} \lamyy - \tF{22} \lamyx)\\
-    \tFel{22} &= (\jc)^{-1/3} \lamzz (\tF{22} \lamxx - \tF{21} \lamxy)\\
-    \tFel{33} &= (\jc)^{-1/3} (1/\lamzz) \tF{33}
-\end{align}
+\input{./sections/equations/Fel_mat.tex}
+% \begin{align}
+%     \tFel{11} &= (\jc)^{-1/3} \lamzz (\tF{11} \lamyy - \tF{12} \lamyx)\\
+%    \tFel{12} &= (\jc)^{-1/3} \lamzz (\tF{12} \lamxx - \tF{11} \lamxy)\\
+%    \tFel{21} &= (\jc)^{-1/3} \lamzz (\tF{21} \lamyy - \tF{22} \lamyx)\\
+%     \tFel{22} &= (\jc)^{-1/3} \lamzz (\tF{22} \lamxx - \tF{21} \lamxy)\\
+%     \tFel{33} &= (\jc)^{-1/3} (1/\lamzz) \tF{33}
+% \end{align}
 
-\begin{align}
-    \tEel{11} &= 0.5[(\tFel{11})^2 + (\tFel{21})^2 - 1] \\
-    \tEel{22} &= 0.5[(\tFel{12})^2 + (\tFel{22})^2 - 1] \\
-    \tEel{33} &= 0.5[(\tFel{33})^2 - 1] \\
-    \tEel{12} &= 0.5[\tFel{11}\tFel{12}  + \tFel{21}\tFel{22}] = \tEel{21}
-\end{align}
+\input{./sections/equations/Eel_mat.tex}
+% \begin{align}
+%     \tEel{11} &= 0.5[(\tFel{11})^2 + (\tFel{21})^2 - 1] \\
+%     \tEel{22} &= 0.5[(\tFel{12})^2 + (\tFel{22})^2 - 1] \\
+%     \tEel{33} &= 0.5[(\tFel{33})^2 - 1] \\
+%     \tEel{12} &= 0.5[\tFel{11}\tFel{12}  + \tFel{21}\tFel{22}] = \tEel{21}
+% \end{align}
 
+\input{./sections/equations/tSel_mat.tex}
+% \begin{align}
+%     \tSel{11} &= \jc[2 \tmusi(\tc) \tEel{11} + \tlamsi(\tc)(\tEel{11} + \tEel{22} + \tEel{33}) ]\\
+%     \tSel{22} &= \jc[2 \tmusi(\tc) \tEel{22} + \tlamsi(\tc)(\tEel{11} + \tEel{22} + \tEel{33}) ]\\
+%     \tSel{33} &= \jc[2 \tmusi(\tc) \tEel{33} + \tlamsi(\tc)(\tEel{11} + \tEel{22} + \tEel{33}) ]\\
+%     \tSel{12} &= \jc2 \tmusi(\tc) \tEel{12} =\tSel{21}\\
+% \end{align}
 
-\begin{align}
-    \tSel{11} &= \jc[2 \tmusi(\tc) \tEel{11} + \tlamsi(\tc)(\tEel{11} + \tEel{22} + \tEel{33}) ]\\
-    \tSel{22} &= \jc[2 \tmusi(\tc) \tEel{22} + \tlamsi(\tc)(\tEel{11} + \tEel{22} + \tEel{33}) ]\\
-    \tSel{33} &= \jc[2 \tmusi(\tc) \tEel{33} + \tlamsi(\tc)(\tEel{11} + \tEel{22} + \tEel{33}) ]\\
-    \tSel{12} &= \jc2 \tmusi(\tc) \tEel{12} =\tSel{21}\\
-\end{align}
+\input{./sections/equations/tS_mat.tex}
+% \begin{align}
+% \tS{11} &= (\jc)^{-2/3}[-\lamxy(\tSel{12} \lamyy - \tSel{22} \lamxy) + \lamyy(\tSel{11} \lamyy - \tSel{21} \lamxy)] \lambda^2_{zz} \\
+% \tS{12} &= (\jc)^{-2/3}[\lamxx(\tSel{12} \lamyy - \tSel{22} \lamxy)  -\lamyx(\tSel{11} \lamyy - \tSel{21} \lamxy)] \lambda^2_{zz} \\
+% \tS{21} &= (\jc)^{-2/3}[\lamxy(\tSel{12} \lamyx - \tSel{22} \lamxx)  -\lamyy(\tSel{11} \lamyx - \tSel{21} \lamxx)] \lambda^2_{zz} \\
+% \tS{22} &= (\jc)^{-2/3}[-\lamxx(\tSel{12} \lamyx - \tSel{22} \lamxx)  + \lamyx(\tSel{11} \lamyx - \tSel{21} \lamxx)] \lambda^2_{zz} \\
+% \tS{33} &= (\jc)^{-2/3} \tSel{33}/\lambda^2_{zz}
+% \end{align}
 
-\begin{align}
-\tS{11} &= (\jc)^{-2/3}[-\lamxy(\tSel{12} \lamyy - \tSel{22} \lamxy) + \lamyy(\tSel{11} \lamyy - \tSel{21} \lamxy)] \lambda^2_{zz} \\
-\tS{12} &= (\jc)^{-2/3}[\lamxx(\tSel{12} \lamyy - \tSel{22} \lamxy)  -\lamyx(\tSel{11} \lamyy - \tSel{21} \lamxy)] \lambda^2_{zz} \\
-\tS{21} &= (\jc)^{-2/3}[\lamxy(\tSel{12} \lamyx - \tSel{22} \lamxx)  -\lamyy(\tSel{11} \lamyx - \tSel{21} \lamxx)] \lambda^2_{zz} \\
-\tS{22} &= (\jc)^{-2/3}[-\lamxx(\tSel{12} \lamyx - \tSel{22} \lamxx)  + \lamyx(\tSel{11} \lamyx - \tSel{21} \lamxx)] \lambda^2_{zz} \\
-\tS{33} &= (\jc)^{-2/3} \tSel{33}/\lambda^2_{zz}
-\end{align}
+\input{./sections/equations/tP_mat.tex}
+% \begin{align}
+%     \tP{11} &= \tF{11} \tS{11} + \tF{12} \tS{21} \\
+%     \tP{12} &= \tF{11} \tS{12} + \tF{12} \tS{22} \\
+%     \tP{21} &= \tF{21} \tS{11} + \tF{22} \tS{21} \\
+%     \tP{22} &= \tF{21} \tS{12} + \tF{22} \tS{22} \\
+%     \tP{33} &= \tF{33} \tS{33}
+% \end{align}
 
+\input{./sections/equations/tsigma_mat.tex}
+% \begin{align}
+%     J &= \tF{33}(\tF{11} \tF{22} - \tF{12} \tF{21}) \\
+%     \tsigma{11} &= (\tF{11} \tP{11} + \tF{12} \tP{12})/J \\
+%     \tsigma{12} &= (\tF{21} \tP{11} + \tF{22} \tP{12})/J \\
+%     \tsigma{21} &= (\tF{11} \tP{21} + \tF{12} \tP{22})/J \\
+%     \tsigma{22} &= (\tF{21} \tP{21} + \tF{22} \tP{22})/J \\
+%     \tsigma{33} &= \tF{33} \tP{33}/J \\
+% \end{align}
 
-\begin{align}
-    \tP{11} &= \tF{11} \tS{11} + \tF{12} \tS{21} \\
-    \tP{12} &= \tF{11} \tS{12} + \tF{12} \tS{22} \\
-    \tP{21} &= \tF{21} \tS{11} + \tF{22} \tS{21} \\
-    \tP{22} &= \tF{21} \tS{12} + \tF{22} \tS{22} \\
-    \tP{33} &= \tF{33} \tS{33}
-\end{align}
-
-\begin{align}
-    J &= \tF{33}(\tF{11} \tF{22} - \tF{12} \tF{21}) \\
-    \tsigma{11} &= (\tF{11} \tP{11} + \tF{12} \tP{12})/J \\
-    \tsigma{12} &= (\tF{21} \tP{11} + \tF{22} \tP{12})/J \\
-    \tsigma{21} &= (\tF{11} \tP{21} + \tF{12} \tP{22})/J \\
-    \tsigma{22} &= (\tF{21} \tP{21} + \tF{22} \tP{22})/J \\
-    \tsigma{33} &= \tF{33} \tP{33}/J \\
-\end{align}
-
-\begin{align}
-    \ttau{11} &= \tsigma{11} - (\tsigma{11} + \tsigma{22} + \tsigma{33})/3 \\
-    \ttau{22} &= \tsigma{22} - (\tsigma{11} + \tsigma{22} + \tsigma{33})/3 \\
-    \ttau{33} &= \tsigma{33} - (\tsigma{11} + \tsigma{22} + \tsigma{33})/3 \\
-    \ttau{12}  &= \ttau{21} = \tsigma{12}
-\end{align}
+\input{./sections/equations/ttau_mat.tex}
+% \begin{align}
+%     \ttau{11} &= \tsigma{11} - (\tsigma{11} + \tsigma{22} + \tsigma{33})/3 \\
+%     \ttau{22} &= \tsigma{22} - (\tsigma{11} + \tsigma{22} + \tsigma{33})/3 \\
+%     \ttau{33} &= \tsigma{33} - (\tsigma{11} + \tsigma{22} + \tsigma{33})/3 \\
+%     \ttau{12}  &= \ttau{21} = \tsigma{12}
+% \end{align}
 
 \begin{align}
     \tsigmaeff &= \sqrt{\fc{3}{2}(\ttau{11}^2 + \ttau{22}^2 + \ttau{33}^2 + 2\ttau{12}^2) }
 \end{align}
 
 
-\begin{align}
-    \tMel{11} &= J[-\tFel{12}(\tFel{11}\ttau{12} + \tFel{21}\ttau{22}) + \tFel{22}(\tFel{11}\ttau{11} + \tFel{21}\ttau{21})]/(\tFelMult{11}{22}-\tFelMult{12}{21})\\
-    \tMel{12} &= J[\tFel{11}(\tFel{11}\ttau{12} + \tFel{21}\ttau{22}) - \tFel{21}(\tFel{11}\ttau{11} + \tFel{21}\ttau{21})]/(\tFelMult{11}{22}-\tFelMult{12}{21})\\
-    \tMel{21} &= J[-\tFel{12}(\tFel{12}\ttau{12} + \tFel{22}\ttau{22}) + \tFel{22}(\tFel{12}\ttau{11} + \tFel{22}\ttau{21})]/(\tFelMult{11}{22}-\tFelMult{12}{21})\\
-    \tMel{22} &= J[\tFel{11}(\tFel{12}\ttau{12} + \tFel{22}\ttau{22}) - \tFel{21}(\tFel{12}\ttau{11} + \tFel{22}\ttau{21})]/(\tFelMult{11}{22}-\tFelMult{12}{21})\\
-    \tMel{33} &= J \ttau{33}
-\end{align}
+\input{./sections/equations/tMel_mat.tex}
+% \begin{align}
+%     \tMel{11} &= J[-\tFel{12}(\tFel{11}\ttau{12} + \tFel{21}\ttau{22}) + \tFel{22}(\tFel{11}\ttau{11} + \tFel{21}\ttau{21})]/(\tFelMult{11}{22}-\tFelMult{12}{21})\\
+%     \tMel{12} &= J[\tFel{11}(\tFel{11}\ttau{12} + \tFel{21}\ttau{22}) - \tFel{21}(\tFel{11}\ttau{11} + \tFel{21}\ttau{21})]/(\tFelMult{11}{22}-\tFelMult{12}{21})\\
+%     \tMel{21} &= J[-\tFel{12}(\tFel{12}\ttau{12} + \tFel{22}\ttau{22}) + \tFel{22}(\tFel{12}\ttau{11} + \tFel{22}\ttau{21})]/(\tFelMult{11}{22}-\tFelMult{12}{21})\\
+%     \tMel{22} &= J[\tFel{11}(\tFel{12}\ttau{12} + \tFel{22}\ttau{22}) - \tFel{21}(\tFel{12}\ttau{11} + \tFel{22}\ttau{21})]/(\tFelMult{11}{22}-\tFelMult{12}{21})\\
+%     \tMel{33} &= J \ttau{33}
+% \end{align}
 
 Viscoplastic rates: 
-\begin{align}
-    \dotlam{xx} &= \fc{3\dot{d_0}}{2 J \tsigmaeff}(\tMel{11} \lamxx + \tMel{12}\lamyx)\HS(\fc{\tsigmaeff}{\tsigmaf} - 1 )^\m\\
-   \dotlam{xy} &= \fc{3\dot{d_0}}{2 J \tsigmaeff}(\tMel{11} \lamxy + \tMel{12}\lamyy)\HS(\fc{\tsigmaeff}{\tsigmaf} - 1 )^\m\\
-   \dotlam{yx} &= \fc{3\dot{d_0}}{2 J \tsigmaeff}(\tMel{21} \lamxx + \tMel{22}\lamyx)\HS(\fc{\tsigmaeff}{\tsigmaf} - 1 )^\m\\
-   \dotlam{yy} &= \fc{3\dot{d_0}}{2 J \tsigmaeff}(\tMel{21} \lamxy + \tMel{22}\lamyy)\HS(\fc{\tsigmaeff}{\tsigmaf} - 1 )^\m\\
-    \dotlam{zz} &= \fc{3\dot{d_0}\lamzz}{2 J \tsigmaeff}\tMel{33}\HS(\fc{\tsigmaeff}{\tsigmaf} - 1 )^\m\\
-\end{align}
+
+\input{./sections/equations/Fpdot_mat.tex}
+% \begin{align}
+%     \dotlam{xx} &= \fc{3\dot{d_0}}{2 J \tsigmaeff}(\tMel{11} \lamxx + \tMel{12}\lamyx)\HS(\fc{\tsigmaeff}{\tsigmaf} - 1 )^\m\\
+%    \dotlam{xy} &= \fc{3\dot{d_0}}{2 J \tsigmaeff}(\tMel{11} \lamxy + \tMel{12}\lamyy)\HS(\fc{\tsigmaeff}{\tsigmaf} - 1 )^\m\\
+%    \dotlam{yx} &= \fc{3\dot{d_0}}{2 J \tsigmaeff}(\tMel{21} \lamxx + \tMel{22}\lamyx)\HS(\fc{\tsigmaeff}{\tsigmaf} - 1 )^\m\\
+%    \dotlam{yy} &= \fc{3\dot{d_0}}{2 J \tsigmaeff}(\tMel{21} \lamxy + \tMel{22}\lamyy)\HS(\fc{\tsigmaeff}{\tsigmaf} - 1 )^\m\\
+%     \dotlam{zz} &= \fc{3\dot{d_0}\lamzz}{2 J \tsigmaeff}\tMel{33}\HS(\fc{\tsigmaeff}{\tsigmaf} - 1 )^\m\\
+% \end{align}
 
 Viscoplastic rate equations in non-dimensional form:
 \begin{align}
@@ -474,15 +477,16 @@ In non-dimensional form:
 \end{align}
 
 \subsection{Boundary and Initial Conditions}
-\begin{align}
-   \tc(\tX, \tY, 0) &= 0 \\
-   \tu(\tX, \tY, 0) &= 0 \\
-   \tv(\tX, \tY, 0) &= 0 \\
-   \tu(\tX, 0, \tt) &= \tv(\tX, 0, \tt) = 0
-    \text{; all three other faces are traction free} \\
-   \td{j}_x(\tX, 1, \tt) &= \td{j}_0 (1 - \tc(\tX, 1, \tt))
-   \text{; all three other faces are insulated from any flux}
-\end{align}
+\begin{center}
+    \begin{align}
+        \tc(\tX, \tY, 0) = 0 \\
+        \tu(\tX, \tY, 0) = 0 \\
+        \tv(\tX, \tY, 0) = 0 \\
+        \tu(\tX, 0, \tt) = \tv(\tX, 0, \tt) = 0 \\
+        \tu(-1/2, \tY, \tt) =  \tu(1/2, \tY, \tt) = 0 \\
+        \td{j}_x(\tX, 1, \tt) = \td{j}_0 (1 - \tc(\tX, 1, \tt))
+     \end{align}     
+\end{center}
 
 
 
