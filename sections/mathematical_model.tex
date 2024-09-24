@@ -267,7 +267,7 @@ Mass conservation Equation:
         &= \fc{V_m^b}{R_g T \xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}{C}_{mnkl}\tEel{kl} + \fc{1}{2}\left(\jc \pdiff{C_{ijkl}}{\tc} + \pdiff{\jc}{\tc} C_{ijkl}\right)\tEel{ij}\tEel{kl}\right] \\ 
         &= \fc{1}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}{\td{C}}_{mnkl}\tEel{kl} + \fc{1}{2}\left(\jc \pdiff{\td{C}_{ijkl}}{\tc} + \pdiff{\jc}{\tc} \td{C}_{ijkl}\right)\tEel{ij}\tEel{kl}\right] \\
     % \td{C}_{ijkl} &= \jc\left[\td{\lambda}_{si}(\tc)\delta_{ij} \delta_{kl} + \td{\mu}_{si}(\tc)(\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk})\right] \\
-    \tPel{ij} &= \td{C}_{ijkl} \tEel{kl} = \tSel{ij}/\jc \\
+    \td{C}_{ijkl} \tEel{kl} &= \tPel{ij}  = \tSel{ij}/\jc \Longrightarrow \td{C}_{ijkl} = \td{\lambda}_{si}(\tc)\delta_{ij} \delta_{kl} +  \td{\mu}_{si}(\tc)(\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk})  \\
     \td{\mu}_s &= \fc{1}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}\tPel{mn} + \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} + \fc{1}{2} \pdiff{\jc}{\tc} \td{C}_{ijkl}\tEel{ij}\tEel{kl}\right] \\
     &= \fc{1}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}\tPel{mn} + \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} + \fc{1}{2} \pdiff{\jc}{\tc} \tEel{ij}\tPel{kl}\right] \\
     &= \fc{1}{\xmax}\left[\pdiff{\jc}{\tc} \tPel{mn} \left( -\fc{1}{3}\tFel{im}\tFel{in}+ \fc{1}{2} \tEel{mn}\right)+ \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} \right] \\
@@ -281,8 +281,8 @@ Mass conservation Equation:
 
 \begin{align}
     \td{\mu}_0 &= \text{log}(\gamma \td{c}) \\
-    \td{\mu}_1 &= -\fc{1}{6}\pdiff{\jc}{\tc} [\tSel{11}\tEel{11} + \tSel{22}\tEel{22} + 2\tSel{12}\tEel{12} + \tSel{33}\tEel{33}] \\
-    \td{\mu}_2 &= -\fc{1}{3}\pdiff{ \jc}{\tc}[\tSel{11} + \tSel{22} + \tSel{33}] \\
+    \td{\mu}_1 &= -\fc{1}{6}\pdiff{\jc}{\tc} [\tPel{11}\tEel{11} + \tPel{22}\tEel{22} + 2\tPel{12}\tEel{12} + \tPel{33}\tEel{33}] \\
+    \td{\mu}_2 &= -\fc{1}{3}\pdiff{ \jc}{\tc}[\tPel{11} + \tPel{22} + \tPel{33}] \\
     \td{\mu}_3 &= \fc{1}{2}\jc \pdiff{ \td{C}_{ijkl}}{\tc}\tEel{kl}\tEel{ij} \\
     \pdiff{\td{C}_{ijkl}}{\tc} &= \pdiff{\td{\lambda}_{si}(\tc)}{\tc}\delta_{ij} \delta_{kl} +  \pdiff{\td{\mu}_{si}(\tc)}{\tc}(\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk})  \\
     \td{\mu}_3  &=  \fc{1}{2}\jc \pdiff{\td{\lambda}_{si}(\tc)}{\tc}\delta_{ij} \delta_{kl} \tEel{kl}\tEel{ij} + \fc{1}{2}\jc\pdiff{\td{\mu}_{si}(\tc)}{\tc}(\delta_{ik} \delta_{jl} \tEel{kl}\tEel{ij} + \delta_{il} \delta_{jk} \tEel{kl}\tEel{ij}) \\
@@ -295,7 +295,7 @@ Mass conservation Equation:
     \td{j}_x &= \fc{-\bar{D} H \tc}{J^2} \left(\pdiff{ \td \mu}{X}(\tF{12}^2 + \tF{22}^2) - \pdiff{ \td \mu}{ Y}(\tF{11}\tF{12} + \tF{21}\tF{22})\right)\\
     &= \fc{-\bar{D}  \tc}{J^2} \left(\pdiff{ \td \mu}{\tX}(\tF{12}^2 + \tF{22}^2) - \pdiff{ \td \mu}{\tY}(\tF{11}\tF{12} + \tF{21}\tF{22})\right)\\
     \td{j}_y &= \fc{-\bar{D} H \tc}{J^2} \left(\pdiff{ \td \mu}{Y}(\tF{11}^2 + \tF{21}^2) - \pdiff{ \td \mu}{X}(\tF{11}\tF{12} + \tF{21}\tF{22})\right)\\
-    &= \fc{-\bar{D}  \tc}{J^2} \left( \pdiff{ \td \mu}{\tY}(\tF{11}^2 + \tF{21}^2) -\pdiff{ \td \mu}{\tX}(\tF{11}\tF{12} + \tF{21}\tF{22})\right)\\
+    &= \fc{-\bar{D}  \tc}{J^2} \left( \pdiff{ \td \mu}{\tY}(\tF{11}^2 + \tF{21}^2) -\pdiff{ \td \mu}{\tX}(\tF{11}\tF{12} + \tF{21}\tF{22})\right)
 \end{align}
 
 
