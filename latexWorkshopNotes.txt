@@ -1,0 +1,8 @@
+Forward sync:
+    ctrl+alt+j
+backward sync:
+    double click or ctrl+click
+surround:
+    ctrl+l, ctrl+w
+clean auxillary files:
+    ctrl+alt+c
