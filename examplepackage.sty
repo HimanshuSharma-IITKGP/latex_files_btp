@@ -1,6 +1,12 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{examplepackage}[2014/08/21 Example package]
 
+\setlength{\topmargin}{0.0in}
+\setlength{\oddsidemargin}{0.33in}
+\setlength{\evensidemargin}{-0.08in}
+\setlength{\textheight}{8.5in}
+\setlength{\textwidth}{6.0in}
+
 %%%%%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%%
 \RequirePackage{graphicx} 
 \RequirePackage{layout}
@@ -10,6 +16,10 @@
 \RequirePackage{subfiles} 
 \RequirePackage{xcolor}
 \RequirePackage{bm}
+
+
+
+\newcommand{\heavi}{\mathrm{H}\left( \fc{\sigmaeff}{\sigmaf} - 1\right)}
 
 %%%%%%%%%%%%%% TEXT %%%%%%%%%%%%%%
 \newcommand{\el}{{\rm{el}}}

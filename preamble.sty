@@ -1,6 +1,12 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{examplepackage}[2014/08/21 Example package]
 
+\setlength{\topmargin}{0.0in}
+\setlength{\oddsidemargin}{0.33in}
+\setlength{\evensidemargin}{-0.08in}
+\setlength{\textheight}{8.5in}
+\setlength{\textwidth}{6.0in}
+
 %%%%%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%%
 \RequirePackage{graphicx} 
 \RequirePackage{layout}
@@ -10,6 +16,11 @@
 \RequirePackage{subfiles} 
 \RequirePackage{xcolor}
 \RequirePackage{bm}
+\RequirePackage{natbib}
+
+
+
+\newcommand{\heavi}{\mathrm{H}\left( \fc{\sigmaeff}{\sigmaf} - 1\right)}
 
 %%%%%%%%%%%%%% TEXT %%%%%%%%%%%%%%
 \newcommand{\el}{{\rm{el}}}
@@ -17,16 +28,17 @@
 \newcommand{\p}{{\rm{p}}}
 \renewcommand{\c}{{\rm{c}}}
 \renewcommand{\max}{{\rm{max}}}
-\newcommand{\cmax}{{c_\max}}
+\newcommand{\cmax}{\fc{\xmax}{\vmb}}
 \newcommand{\si}{{\rm{si}}}
 \newcommand{\m}{{\rm{m}}}
+\newcommand{\vmb}{V_{\rm{m}}^{\rm{B}}}
 
 %%%%%%%%%%%%%% SCALARS %%%%%%%%%%%%%%
-\newcommand{\lamxx}{\lambda_{xx}}
-\newcommand{\lamxy}{\lambda_{xy}}
-\newcommand{\lamyx}{\lambda_{yx}}
-\newcommand{\lamyy}{\lambda_{yy}}
-\newcommand{\lamzz}{\lambda_{zz}}
+\newcommand{\lamxx}{\lambda_{11}}
+\newcommand{\lamxy}{\lambda_{12}}
+\newcommand{\lamyx}{\lambda_{21}}
+\newcommand{\lamyy}{\lambda_{22}}
+\newcommand{\lamzz}{\lambda_{33}}
 
 \newcommand{\jc}{{J^c}}
 \newcommand{\djc}{\frac{d \jc}{d\tc}}
@@ -41,10 +53,10 @@
 \newcommand{\sigmaf}{\sigma_{\rm{f}}}
 
 \newcommand{\muSi}{\mu_{\si}}
-\newcommand{\muSic}{\mu_{\si}(c)}
+\newcommand{\muSic}{\mu_{\si}(\tc)}
 
 \newcommand{\lamSi}{\lambda_{\si}}
-\newcommand{\lamSic}{\lambda_{\si}(c)}
+\newcommand{\lamSic}{\lambda_{\si}(\tc)}
 
 
 \newcommand{\tF}[1]{\tilde{F}_{#1}}
@@ -54,6 +66,7 @@
 \newcommand{\tsigma}[1]{\tilde{\sigma}_{#1}}
 \newcommand{\tS}[1]{\tilde{S}_{#1}}
 \newcommand{\tSel}[1]{\tilde{S}_{#1}^{\el}}
+\newcommand{\tPel}[1]{\tilde{P}_{#1}^{\el}}
 \newcommand{\tP}[1]{\tilde{P}_{#1}}
 \newcommand{\tMel}[1]{\tilde{M}_{#1}^{\el}}
 
@@ -87,7 +100,7 @@
 \newcommand{\CS}{\bm{\sigma}} %Cauchy stress
 \newcommand{\DCS}{\bm{\tau}} %Deviatoric Cauchy stress
 \newcommand{\PKS}{\mathbf{S}} %Second Piola-Kirchhoff stress
-
+\newcommand{\DP}{\mathbf{D}^{\rm{P}} }
 \newcommand{\tensor}[1]{
     \begin{bmatrix}
         #1_{11} && #1_{12}  && 0 \\

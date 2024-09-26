@@ -1,8 +1,8 @@
 \documentclass[12pt,twoside,openright]{report} 
 
 
-\usepackage{examplepackage}
-\title{Research Paper}
+\usepackage{preamble}
+\title{BTP-1}
 \author{Himanshu Sharma}
 \date{\today}
 
@@ -12,16 +12,18 @@
 \setlength{\textwidth}{450pt}
 
 
-\setlength{\topmargin}{0.0in}
-\setlength{\oddsidemargin}{0.33in}
-\setlength{\evensidemargin}{-0.08in}
-\setlength{\textheight}{8.5in}
-\setlength{\textwidth}{6.0in}
 
 
 \begin{document}
 %\layout
 
+%this baselineskip gives sufficient line spacing for an examiner to easily
+%markup the thesis with comments
+\baselineskip=18pt plus1pt
+
+%set the number of sectioning levels that get number and appear in the contents
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
 \maketitle
 \pagebreak
 
@@ -133,5 +135,7 @@
 % \end{figure}
 
 
+\bibliographystyle{agsm}  %use the plain bibliography style
+\bibliography{refs} 
 
 \end{document}
