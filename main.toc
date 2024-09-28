@@ -1,17 +1,15 @@
 \contentsline {chapter}{Certificate}{ii}{Doc-Start}%
 \contentsline {chapter}{Declaration}{iii}{Doc-Start}%
-\contentsline {chapter}{Acknowledgements}{iv}{Doc-Start}%
-\contentsline {chapter}{List of Symbols and Abbreviations}{v}{Doc-Start}%
-\contentsline {chapter}{Abstract}{vi}{Doc-Start}%
+\contentsline {chapter}{Abstract}{iv}{Doc-Start}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Problem Description}{3}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Mathematical Formulation}{5}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Kinematics}{5}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Viscoplastic Flow}{6}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Diffusion Induced Deformation}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Diffusion Induced Deformation}{8}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Mechanical Equilibrium }{8}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Diffusion}{9}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Non-dimensionalisation}{10}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Boundary and Initial Conditions}{10}{section.3.7}%
+\contentsline {section}{\numberline {3.6}Non-dimensionalisation}{11}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Boundary and Initial Conditions}{11}{section.3.7}%
 \contentsline {chapter}{\numberline {A}Non-Dimensional Equations in Component Form}{13}{appendix.A}%
-\contentsline {chapter}{\numberline {B}To do}{21}{appendix.B}%
+\contentsline {chapter}{\numberline {B}To do}{20}{appendix.B}%

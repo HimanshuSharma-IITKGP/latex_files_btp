@@ -50,7 +50,14 @@ A viscoplastic constitutive relation of the following form is considered.
 \begin{gather}
 \DP = \pdiff{G(\sigmaeff)}{\DCS}
 \end{gather}
-Where $\DP$ is the rate dependent plastic deformation tensor, $G(\sigmaeff)$ is the flow potential, $\sigmaeff$ is the von Mises stress and $\DCS$ is the deviatoric part of Cauchy stress tensor. Various studies \citep{2011JMPSBower,2012JMPSCui} have adopted a power law of following for flow potential
+Where $\DP$ is the rate dependent plastic deformation tensor, $G(\sigmaeff)$ is the flow potential, $\DCS$ is the deviatoric part of Cauchy stress tensor and $\sigmaf$ is yield strength defined as 
+\[ \sigmaf =  \begin{cases} 
+      \sigma_{f, \si} & \text{ for Silicon} \\
+      \sigma_{f, {\rm{SEI}}} & \text{ for SEI layer}
+   \end{cases}
+\]
+
+Various studies \citep{2011JMPSBower,2012JMPSCui} have adopted a power law of following for flow potential
 \begin{align}
 G(\sigmaeff) &= \fc{\sigmaf \dZEROdot}{\mathrm{m}+1}\left(\fc{\sigmaeff}{\sigmaf}-1\right)^{\mathrm{m}+1}\heavi. \\
 \Rightarrow \mathbf{D}^{\rm{P}} &= \fc{3 \DCS \dZEROdot}{2 \sigmaeff}\left(\fc{\sigmaeff}{\sigmaf}-1\right)^{\mathrm{m}}\heavi.
@@ -84,6 +91,7 @@ The compound formed between Lithium and Silicon is of the form $\text{Li}_{\chi}
 \end{gather}
 where \begin{nonumbereq}\jc = 1 + 3 \eta \xmax \tc\end{nonumbereq} is the volumetric change experienced by the Silicon film upon insertion of Li-ions. $\eta$ is a material parameter giving rate of change in volume w.r.t. $\tc$. It may be noted that as $\tc$ approaches 1, $\mathrm{det}(\F^\c)$ approaches 4. Therefore the body undergoes a volumetric change of about 300\% due to diffusion of Li-ions, justifying the use of large deformation analysis.
 
+Since, SEI is permeable to lithiation $\F^\c$ will be considered only for Silicon. Therefore, for the purpose of modelling $\tc$ is considered zero in SEI making $\F^\c$ equal to $\I$.
 \section{Mechanical Equilibrium } \label{section:MechEqbm}
 From equations \ref{eq:F_decomposition} and \ref{eq:Finel_decomposition},
 \begin{align}
@@ -103,10 +111,24 @@ The constitutive relation for the elastic deformation is expressed in terms of t
 \end{gather}
 $\mathbb{C}$ is concentration dependent and assumed to be isotropic. Hence, its components can be expressed in terms of Lam\'{e} coefficients as 
 \begin{align}
-    C_{ijkl}(\tc) &= \lambda_{\rm{si}}(\tc)\delta_{ij} \delta_{kl} +  \mu_{\rm{si}}(\tc)(\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk}). \\
+    C_{ijkl}(\tc) &= \lambda_{\rm{mat}}(\tc)\delta_{ij} \delta_{kl} +  \mu_{\rm{mat}}(\tc)(\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk}). \\
     \implies W(\F, \tc) &= \fc{\jc}{2}\left[\lamSic (\tr{\E^\el})^2 + 2 \muSic \E^{\el}:\E^{\el}\right].
 \end{align}
-The elastic modulus of Silicon is concentration dependent with $E(\tc) = E_{\text{si}}(1 + \eta_{\rm{E}} \chi_{\rm{max}} \tc)$. $E_{\si}$ denotes the elastic modulus of pure Silicon. The elastic second Piola-Kirchhoff stress is denoted by $\PKS^\el$. Therefore, 
+The lam\'{e} parameters, $\lamSic$ and $\muSic$ are given by
+\begin{align}
+    \lamSic = \fc{\EMatc \nuMat}{(1+\nuMat)(1-2\nuMat)} 
+    && \muSic = \fc{\EMatc}{2(1+\nuMat)}. \nonumber
+\end{align}
+The material properties $\EMatc$ and $\nuMat$ are defined domainwise as follows:
+\[\EMatc = \begin{cases}
+     E_{\text{si}}(1 + \eta_{\rm{E}} \chi_{\rm{max}} \tc) \text{  \quad for Silicon} \\
+     E_{\rm{SEI}} \text{ \quad  for SEI }
+\end{cases} \text{ and }
+\nuMat = \begin{cases}
+     \nu_{\si}\text{ \quad for Silicon} \\
+     \nu_{\rm{SEI}} \text{\quad for SEI }
+\end{cases}\]
+The elastic second Piola-Kirchhoff stress is denoted by $\PKS^\el$. Therefore, 
 \begin{align}
     \PKS^\el &= \pdiff{W(\F, \tc)}{\E^{\el}}\nonumber \\
     \implies  \PKS^\el &= \jc[\lamSic \tr{\E^\el}\I + 2 \muSic \E^\el ]. \label{eq:Sel_tensor}
