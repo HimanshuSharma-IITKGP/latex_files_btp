@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.25)  26 SEP 2024 21:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.25)  28 SEP 2024 19:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,7 +9,16 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+(C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/base\fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip48
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+) (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count187
@@ -21,16 +30,12 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count193
 \c@figure=\count194
 \c@table=\count195
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
 \bibindent=\dimen140
 ) (preamble.sty
-
-LaTeX Warning: You have requested package `preamble',
-               but the package provides `examplepackage'.
-
-Package: examplepackage 2014/08/21 Example package
-(C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: preamble 2014/08/21 preamble package
+ (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
@@ -196,10 +201,10 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip50
+\Hy@SectionHShift=\skip51
 ) (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2024/05/23 v2.17q AMS math features
-\@mathmargin=\skip51
+\@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -256,8 +261,8 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \totwidth@=\dimen154
 \lineht@=\dimen155
 \@envbody=\toks23
-\multlinegap=\skip52
-\multlinetaggap=\skip53
+\multlinegap=\skip53
+\multlinetaggap=\skip54
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -301,117 +306,284 @@ Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip54
-\bibsep=\skip55
+\bibhang=\skip55
+\bibsep=\skip56
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count318
-)) (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+ (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen156
+\ar@mcellbox=\box55
+\extrarowheight=\dimen157
+\NC@list=\toks25
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box56
+)
+\TX@col@width=\dimen158
+\TX@old@table=\dimen159
+\TX@old@col=\dimen160
+\TX@target=\dimen161
+\TX@delta=\dimen162
+\TX@cols=\count319
+\TX@ftn=\toks26
+) (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+) (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-01-04 L3 programming layer (loader) 
+ (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count319
-\l__pdf_internal_box=\box55
-) (main.aux)
+\l__color_backend_stack_int=\count320
+\l__pdf_internal_box=\box57
+))
+Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count321
+\l__lipsum_a_int=\count322
+\l__lipsum_b_int=\count323
+ (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))) (main.aux (frontmatter/titlepage.aux) (frontmatter/certificate.aux) (frontmatter/declaration.aux) (frontmatter/acknowlegements.aux) (frontmatter/symbabbrev.aux) (frontmatter/abstract.aux) (chapters/Introduction.aux) (chapters/problem_description.aux) (chapters/mathematical_model.aux) (chapters/appendix1.aux) (chapters/appendix2.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
  (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen156
-\scratchbox=\box56
-\nofMPsegments=\count321
-\nofMParguments=\count322
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen157
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count324
+\scratchdimen=\dimen163
+\scratchbox=\box58
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen164
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks28
 ) (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 35.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+\openout2 = `./frontmatter/titlepage.aux'.
+
+ (frontmatter/titlepage.tex
+<./figures/./iitkgplogo.JPG, id=67, 918.43124pt x 1027.84pt>
+File: ./figures/./iitkgplogo.JPG Graphic file (type jpg)
+<use ./figures/./iitkgplogo.JPG>
+Package pdftex.def Info: ./figures/./iitkgplogo.JPG  used on input line 23.
+(pdftex.def)             Requested size: 91.04881pt x 101.88037pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
  (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)) [1
 
-{C:/Users/Himanshu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (sections/Introduction.tex) (sections/mathematical_model.tex [2]
-Chapter 1.
-[3
 
-] [4] [5]
-Underfull \vbox (badness 2393) has occurred while \output is active []
+{C:/Users/Himanshu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./figures/./iitkgplogo.JPG>]
+\openout2 = `./frontmatter/certificate.aux'.
 
- [6]
-Overfull \hbox (1.95573pt too wide) in paragraph at lines 169--169
-[]\OT1/cmr/bx/n/17.28 Non-Dimensional Equa-tions in Com-po-nent Form 
+ (frontmatter/certificate.tex) [2
+
+
+
+]
+\openout2 = `./frontmatter/declaration.aux'.
+
+ (frontmatter/declaration.tex
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
  []
 
-(sections/equations/Fel_mat.tex [7]) (sections/equations/Eel_mat.tex) (sections/equations/tSel_mat.tex) (sections/equations/tS_mat.tex
-Underfull \vbox (badness 7504) has occurred while \output is active []
+) [3
 
- [8]) (sections/equations/tP_mat.tex) (sections/equations/tsigma_mat.tex) (sections/equations/ttau_mat.tex
-Underfull \vbox (badness 4779) has occurred while \output is active []
 
- [9]) (sections/equations/tMel_mat.tex) (sections/equations/Fpdot_mat.tex) [10]
-Underfull \vbox (badness 1371) has occurred while \output is active []
 
- [11]
-Overfull \vbox (31.6143pt too high) has occurred while \output is active []
+]
+\openout2 = `./frontmatter/acknowlegements.aux'.
 
- [12]
+ (frontmatter/acknowlegements.tex) [4
+
+
+
+]
+\openout2 = `./frontmatter/symbabbrev.aux'.
+
+ (frontmatter/symbabbrev.tex) [5
+
+
+
+]
+\openout2 = `./frontmatter/abstract.aux'.
+
+ (frontmatter/abstract.tex) [6
+
+
+
+] (main.toc)
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [7
+
+
+
+]
+\openout2 = `./chapters/Introduction.aux'.
+
+ (chapters/Introduction.tex
+Chapter 1.
+) [1
+
+
+
+] [2]
+\openout2 = `./chapters/problem_description.aux'.
+
+ (chapters/problem_description.tex
+Chapter 2.
+Package epstopdf Info: Source file: <figures/drawing.eps>
+(epstopdf)                    date: 2024-09-28 15:56:22
+(epstopdf)                    size: 76514 bytes
+(epstopdf)             Output file: <figures/drawing-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-09-28 15:56:40
+(epstopdf)                    size: 22023 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/drawing-eps-converted-to.pdf figures/drawing.eps>
+(epstopdf)             \includegraphics on input line 5.
+Package epstopdf Info: Output file is already uptodate.
+<figures/drawing-eps-converted-to.pdf, id=129, 555.07375pt x 196.735pt>
+File: figures/drawing-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/drawing-eps-converted-to.pdf>
+Package pdftex.def Info: figures/drawing-eps-converted-to.pdf  used on input line 5.
+(pdftex.def)             Requested size: 450.0pt x 159.49554pt.
+) [3
+
+
+
+
+ <./figures/drawing-eps-converted-to.pdf>] [4]
+\openout2 = `./chapters/mathematical_model.aux'.
+
+ (chapters/mathematical_model.tex
+Chapter 3.
+[5
+
+
+
+
+]
+Package epstopdf Info: Source file: <figures/decomposition.eps>
+(epstopdf)                    date: 2024-09-28 15:48:30
+(epstopdf)                    size: 107265 bytes
+(epstopdf)             Output file: <figures/decomposition-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-09-28 15:49:52
+(epstopdf)                    size: 24411 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/decomposition-eps-converted-to.pdf figures/decomposition.eps>
+(epstopdf)             \includegraphics on input line 36.
+Package epstopdf Info: Output file is already uptodate.
+<figures/decomposition-eps-converted-to.pdf, id=175, 487.8225pt x 175.65625pt>
+File: figures/decomposition-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/decomposition-eps-converted-to.pdf>
+Package pdftex.def Info: figures/decomposition-eps-converted-to.pdf  used on input line 36.
+(pdftex.def)             Requested size: 450.0pt x 162.0399pt.
+ [6 <./figures/decomposition-eps-converted-to.pdf>] [7] [8] [9] [10]) [11
+
+]
+\openout2 = `./chapters/appendix1.aux'.
+
+ (chapters/appendix1.tex [12
+
+
+
+
+]
+Appendix A.
+(chapters/equations/Fel_mat.tex) (chapters/equations/Eel_mat.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]) (main.bbl [14]) [15
+ [13]) (chapters/equations/tSel_mat.tex) (chapters/equations/tS_mat.tex) (chapters/equations/tP_mat.tex
+Underfull \vbox (badness 5756) has occurred while \output is active []
 
-] (main.aux)
+ [14]) (chapters/equations/tsigma_mat.tex) (chapters/equations/ttau_mat.tex) (chapters/equations/tMel_mat.tex
+Underfull \vbox (badness 1152) has occurred while \output is active []
+
+ [15]) (chapters/equations/Fpdot_mat.tex)
+Overfull \hbox (1.73262pt too wide) detected at line 71
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+Overfull \hbox (9.78876pt too wide) detected at line 90
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17] [18]) [19]
+\openout2 = `./chapters/appendix2.aux'.
+
+ (chapters/appendix2.tex [20
+
+
+
+
+]
+Appendix B.
+) [21] (main.bbl [22
+
+
+
+]) [23] (main.aux (frontmatter/titlepage.aux) (frontmatter/certificate.aux) (frontmatter/declaration.aux) (frontmatter/acknowlegements.aux) (frontmatter/symbabbrev.aux) (frontmatter/abstract.aux) (chapters/Introduction.aux) (chapters/problem_description.aux) (chapters/mathematical_model.aux) (chapters/appendix1.aux) (chapters/appendix2.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A0D9AAC9F0B7230D629842D1E14248DD;1921.
+(rerunfilecheck)             Checksum: D35AE67D94C110E7EEC27B0648643758;2490.
  ) 
 Here is how much of TeX's memory you used:
- 11129 strings out of 474486
- 172238 string characters out of 5742339
- 1967542 words of memory out of 5000000
- 33052 multiletter control sequences out of 15000+600000
- 573261 words of font info for 91 fonts, out of 8000000 for 9000
+ 12053 strings out of 474486
+ 199919 string characters out of 5742339
+ 1972542 words of memory out of 5000000
+ 33868 multiletter control sequences out of 15000+600000
+ 568891 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,16n,93p,1105b,600s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (15 pages, 249024 bytes).
+ 94i,16n,107p,858b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Himanshu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (30 pages, 649030 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 166 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 534 PDF objects out of 1000 (max. 8388607)
+ 179 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

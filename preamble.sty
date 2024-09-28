@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{examplepackage}[2014/08/21 Example package]
+\ProvidesPackage{preamble}[2014/08/21 preamble package]
 
 \setlength{\topmargin}{0.0in}
 \setlength{\oddsidemargin}{0.33in}
@@ -11,16 +11,27 @@
 \RequirePackage{graphicx} 
 \RequirePackage{layout}
 \RequirePackage{float}
-\RequirePackage{hyperref}
+\RequirePackage[]{hyperref}
 \RequirePackage{amsmath, amssymb, amsfonts}
 \RequirePackage{subfiles} 
 \RequirePackage{xcolor}
 \RequirePackage{bm}
 \RequirePackage{natbib}
+\usepackage{tabularx}
+\usepackage{indentfirst}
+\usepackage{lipsum}
 
 
-
+\graphicspath{{./figures/}}
 \newcommand{\heavi}{\mathrm{H}\left( \fc{\sigmaeff}{\sigmaf} - 1\right)}
+
+\renewcommand{\implies}{\Longrightarrow}
+
+
+\newenvironment{nonumbereq}
+    {$
+     \stepcounter{equation}}  % Begin environment: open display math and increment counter
+    {$ }
 
 %%%%%%%%%%%%%% TEXT %%%%%%%%%%%%%%
 \newcommand{\el}{{\rm{el}}}

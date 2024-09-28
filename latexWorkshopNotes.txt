@@ -6,3 +6,9 @@ surround:
     ctrl+l, ctrl+w
 clean auxillary files:
     ctrl+alt+c
+Sort and align .bib file
+    latex-workshop.bibalignsort
+
+    @(	\left( $1 \right)
+    @{	\left\{ $1 \right\}
+    @[	\left[ $1 \right]

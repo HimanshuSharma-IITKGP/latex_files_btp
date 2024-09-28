@@ -1,0 +1,108 @@
+\chapter{Non-Dimensional Equations in Component Form}
+In the development of following equations only non-zero components of various tensors are mentioned.\\
+Introducing $\tX$, $\tY$, $\tu$ and $\tv$ in equation \ref{eq:F_tensor}, the component of $\F$ are 
+\begin{align}
+[\F] = 
+\begin{bmatrix}
+       1 + \pdiff{\tu}{\tX} && \pdiff{\tu}{\tY} && 0 \\
+       \pdiff{\tv}{\tX} && 1 + \pdiff{\tv}{\tY} && 0 \\
+       0 && 0 && 1
+\end{bmatrix} = \begin{bmatrix}
+    F_{11} && F_{12}  && 0 \\
+    F_{21} && F_{22}  && 0 \\
+    0 && 0 && F_{33}
+\end{bmatrix}.
+\end{align}
+From \ref{eq:Fel_tensor}
+\begin{subequations}
+\input{./chapters/equations/Fel_mat.tex}
+\end{subequations}
+The components of $\E^\el$ are
+\begin{subequations}
+\input{./chapters/equations/Eel_mat.tex}
+\end{subequations}
+Non-dimensionalizing lam\'{e} constants and using \ref{eq:Sel_tensor}
+\begin{subequations}
+\input{./chapters/equations/tSel_mat.tex}
+\end{subequations}
+From \ref{eq:S_tensor} and \ref{eq:P_tensor}
+\begin{subequations}
+\input{./chapters/equations/tS_mat.tex}
+\end{subequations}
+\begin{subequations}
+\input{./chapters/equations/tP_mat.tex}
+\end{subequations}
+\begin{subequations}
+\input{./chapters/equations/tsigma_mat.tex}
+\end{subequations}
+\begin{subequations}
+\input{./chapters/equations/ttau_mat.tex}
+\end{subequations}
+
+\begin{align}
+    \tsigmaeff &= \sqrt{\fc{3}{2}(\ttau{11}^2 + \ttau{22}^2 + \ttau{33}^2 + 2\ttau{12}^2) }
+\end{align}
+\begin{subequations}
+Using \ref{eq:M_tensor}
+\input{./chapters/equations/tMel_mat.tex}
+\end{subequations}
+{\color{red}{These equations need editing if Fpdot\_mat.tex is changed}}
+\begin{subequations}
+\input{./chapters/equations/Fpdot_mat.tex}
+\end{subequations}
+
+
+\begin{align}
+    \bm{\td{j}} &= \frac{\bm{j} H}{\cmax D_0} =-\fc{1}{R_g T} \td{D} \tc \inv{\F} \invT{\F} \nablaX \mu \\
+    D &= D_0 \rm{exp}(\fc{\alpha S_h}{E_0}) = D_0 \rm{exp}(\alpha \td{S}_h)= D_0 \rm{exp}\left(\alpha \frac{\td{S}_{11}+\td{S}_{33}}{2}\right) \\ 
+    \td{\mu_0} &= \text{log}(\gamma \td{c})\\
+    \td{\mu}_s &= \frac{1}{R_g T} \mu_s \\
+        &= \fc{V_m^b}{R_g T \xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}{C}_{mnkl}\tEel{kl} + \fc{1}{2}\left(\jc \pdiff{C_{ijkl}}{\tc} + \pdiff{\jc}{\tc} C_{ijkl}\right)\tEel{ij}\tEel{kl}\right] \nonumber \\ 
+        &= \fc{1}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}{\td{C}}_{mnkl}\tEel{kl} + \fc{1}{2}\left(\jc \pdiff{\td{C}_{ijkl}}{\tc} + \pdiff{\jc}{\tc} \td{C}_{ijkl}\right)\tEel{ij}\tEel{kl}\right] \\
+    \td{C}_{ijkl} \tEel{kl} &= \tPel{ij}  = \tSel{ij}/\jc \\
+    \Longrightarrow \td{C}_{ijkl} &= \td{\lambda}_{si}(\tc)\delta_{ij} \delta_{kl} +  \td{\mu}_{si}(\tc)(\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk})  \\
+    \td{\mu}_s &= \fc{1}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}\tPel{mn} + \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} + \fc{1}{2} \pdiff{\jc}{\tc} \td{C}_{ijkl}\tEel{ij}\tEel{kl}\right] \nonumber\\
+    &= \fc{1}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}\tPel{mn} + \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} + \fc{1}{2} \pdiff{\jc}{\tc} \tEel{ij}\tPel{kl}\right] \nonumber\\
+    &= \fc{1}{\xmax}\left[\pdiff{\jc}{\tc} \tPel{mn} \left( -\fc{1}{3}\tFel{im}\tFel{in}+ \fc{1}{2} \tEel{mn}\right)+ \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} \right] \nonumber\\
+    &= \fc{1}{\xmax}\left[\pdiff{\jc}{\tc} \tPel{mn} \left( -\fc{1}{3}(2\tEel{mn}+\delta_{mn})+ \fc{1}{2} \tEel{mn}\right)+ \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} \right] \nonumber\\
+    &= \fc{1}{\xmax}\left[-\fc{1}{6}\pdiff{\jc}{\tc} \tPel{mn} \tEel{mn} - \fc{1}{3}\pdiff{\jc}{\tc} \tPel{mn}\delta_{mn} +  \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} \right]\nonumber \\
+    &= \fc{1}{\xmax}\left[-\fc{1}{6}\pdiff{\jc}{\tc} \tPel{mn} \tEel{mn} - \fc{1}{3 }\pdiff{\jc}{\tc} \tPel{mm} +  \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} \right] \nonumber\\
+    &= \frac{1}{\xmax}(\td{\mu}_1 + \td{\mu}_2 + \td{\mu}_3)
+\end{align}
+
+
+
+\begin{align}
+    \td{\mu}_1 &= -\fc{1}{6}\pdiff{\jc}{\tc} [\tPel{11}\tEel{11} + \tPel{22}\tEel{22} + 2\tPel{12}\tEel{12} + \tPel{33}\tEel{33}] \\
+    \td{\mu}_2 &= -\fc{1}{3}\pdiff{ \jc}{\tc}[\tPel{11} + \tPel{22} + \tPel{33}] \\
+    \td{\mu}_3 &= \fc{1}{2}\jc \pdiff{ \td{C}_{ijkl}}{\tc}\tEel{kl}\tEel{ij} \\
+    \pdiff{\td{C}_{ijkl}}{\tc} &= \pdiff{\td{\lambda}_{si}(\tc)}{\tc}\delta_{ij} \delta_{kl} +  \pdiff{\td{\mu}_{si}(\tc)}{\tc}(\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk})  \\
+    \td{\mu}_3  &=  \fc{1}{2}\jc \pdiff{\td{\lambda}_{si}(\tc)}{\tc}\delta_{ij} \delta_{kl} \tEel{kl}\tEel{ij} + \fc{1}{2}\jc\pdiff{\td{\mu}_{si}(\tc)}{\tc}(\delta_{ik} \delta_{jl} \tEel{kl}\tEel{ij} + \delta_{il} \delta_{jk} \tEel{kl}\tEel{ij})  \nonumber \\
+    &=  \fc{1}{2}\jc \pdiff{\td{\lambda}_{si}(\tc)}{\tc} \tEel{kk}\tEel{ii} + \fc{1}{2}\jc\pdiff{\td{\mu}_{si}(\tc)}{\tc}(\tEel{ij}\tEel{ij} +  \tEel{ji}\tEel{ij}) \nonumber  \\
+    &=  \fc{1}{2}\jc \pdiff{\td{\lambda}_{si}(\tc)}{\tc} (\mathrm{tr}(\mathbf{E^{\rm{el}}}))^2 + \jc\pdiff{\td{\mu}_{si}(\tc)}{\tc}\tEel{ij}\tEel{ij} \nonumber \\
+    &= \fc{1}{2}\jc[\tlamsi'(c)(\tEel{11} + \tEel{22} + \tEel{33})^2 + 2\tmusi'(\td{c})((\tEel{11})^2 + (\tEel{22})^2 + (\tEel{33})^2 + 2 (\tEel{12})^2)]\\
+    \bm{\td j} &= \bm{j}H V_m^b/(\chi_{\text{max}}D_0) \nonumber \\
+                &= -\fc{D}{D_0}H \tc \td{\F}^{-1}(\td{\F}^{-1})^\T \nabla_{\X} \td \mu\\
+    \td{j}_x &= \fc{-\bar{D} H \tc}{J^2} \left(\pdiff{ \td \mu}{X}(\tF{12}^2 + \tF{22}^2) - \pdiff{ \td \mu}{ Y}(\tF{11}\tF{12} + \tF{21}\tF{22})\right) \nonumber \\
+    &= \fc{-\bar{D}  \tc}{J^2} \left(\pdiff{ \td \mu}{\tX}(\tF{12}^2 + \tF{22}^2) - \pdiff{ \td \mu}{\tY}(\tF{11}\tF{12} + \tF{21}\tF{22})\right)\\
+    \td{j}_y &= \fc{-\bar{D} H \tc}{J^2} \left(\pdiff{ \td \mu}{Y}(\tF{11}^2 + \tF{21}^2) - \pdiff{ \td \mu}{X}(\tF{11}\tF{12} + \tF{21}\tF{22})\right) \nonumber \\
+    &= \fc{-\bar{D}  \tc}{J^2} \left( \pdiff{ \td \mu}{\tY}(\tF{11}^2 + \tF{21}^2) -\pdiff{ \td \mu}{\tX}(\tF{11}\tF{12} + \tF{21}\tF{22})\right)
+\end{align}
+
+Momentum Conservation equations in non-dimensional form:
+\begin{subequations}
+\begin{align}
+    \pdiff{\tP{11}}{\tX} + \pdiff{\tP{12}}{\tY} &= 0 \\
+    \text{and, }   \pdiff{\tP{21}}{\tX} +  \pdiff{\tP{22}}{\tY} &= 0.
+\end{align}
+\end{subequations}
+
+
+
+Mass conservation Equation in non-dimensional form:
+
+\begin{align}
+    \pdiff{c}{t} &= - \nablaX \cdot \bm{j} = -(\pdiff{j_x}{X} + \pdiff{j_y}{ Y}) \nonumber \\ 
+    \cmax \fc{D_0}{H^2} \pdiff{{\td{c}}}{\tt}  &= -(\fc{1}{H}\pdiff{ \td{j}_x}{\tX} + \fc{1}{H}\pdiff{ \td{j}_y}{\tY})\cmax \fc{D_0}{H} \nonumber \\ 
+    \Longrightarrow  \pdiff{{\tc}}{\tt}  &= - (\pdiff{ \td{j}_x}{\tX} +  \pdiff{ \td{j}_y}{\tY}) 
+\end{align}

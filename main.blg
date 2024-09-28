@@ -1,50 +1,70 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: ./frontmatter/titlepage.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: ./frontmatter/certificate.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
+A level-1 auxiliary file: ./frontmatter/declaration.aux
+Reallocating 'name_of_file' (item size: 1) to 34 items.
+A level-1 auxiliary file: ./frontmatter/acknowlegements.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: ./frontmatter/symbabbrev.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: ./frontmatter/abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: ./chapters/Introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 35 items.
+A level-1 auxiliary file: ./chapters/problem_description.aux
+Reallocating 'name_of_file' (item size: 1) to 34 items.
+A level-1 auxiliary file: ./chapters/mathematical_model.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: ./chapters/appendix1.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: ./chapters/appendix2.aux
 Reallocating 'name_of_file' (item size: 1) to 5 items.
 The style file: agsm.bst
 Reallocating 'name_of_file' (item size: 1) to 5 items.
 Database file #1: refs.bib
-Warning--I didn't find a database entry for ""
-You've used 1 entry,
+You've used 7 entries,
             2909 wiz_defined-function locations,
-            643 strings with 4805 characters,
-and the built_in function-call counts, 1552 in all, are:
-= -- 221
-> -- 24
+            702 strings with 6231 characters,
+and the built_in function-call counts, 22757 in all, are:
+= -- 3597
+> -- 352
 < -- 0
-+ -- 91
-- -- 7
-* -- 107
-:= -- 375
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 14
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 15
-empty$ -- 27
-format.name$ -- 9
-if$ -- 263
-int.to.chr$ -- 5
++ -- 1678
+- -- 105
+* -- 1947
+:= -- 4682
+add.period$ -- 7
+call.type$ -- 7
+change.case$ -- 97
+chr.to.int$ -- 6
+cite$ -- 7
+duplicate$ -- 111
+empty$ -- 237
+format.name$ -- 130
+if$ -- 4063
+int.to.chr$ -- 6
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 6
-num.names$ -- 10
-pop$ -- 7
+missing$ -- 8
+newline$ -- 24
+num.names$ -- 73
+pop$ -- 22
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 105
 quote$ -- 0
-skip$ -- 14
+skip$ -- 93
 stack$ -- 0
-substring$ -- 283
-swap$ -- 1
-text.length$ -- 14
+substring$ -- 5005
+swap$ -- 21
+text.length$ -- 98
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 26
 warning$ -- 0
-while$ -- 21
+while$ -- 157
 width$ -- 0
-write$ -- 13
-(There was 1 warning)
+write$ -- 92
