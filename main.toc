@@ -5,11 +5,19 @@
 \contentsline {chapter}{\numberline {2}Problem Description}{3}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Mathematical Formulation}{5}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Kinematics}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Viscoplastic Flow}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Viscoplastic Flow}{7}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Diffusion Induced Deformation}{8}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Mechanical Equilibrium }{8}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Diffusion}{9}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Non-dimensionalisation}{11}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Boundary and Initial Conditions}{11}{section.3.7}%
-\contentsline {chapter}{\numberline {A}Equations in Component Form}{13}{appendix.A}%
-\contentsline {chapter}{\numberline {B}To do}{20}{appendix.B}%
+\contentsline {chapter}{\numberline {4}Mathematical Formulation}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Kinematics}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Viscoplastic Flow}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Diffusion Induced Deformation}{16}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Mechanical Equilibrium }{16}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Diffusion}{17}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Non-dimensionalisation}{19}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Boundary and Initial Conditions}{19}{section.4.7}%
+\contentsline {chapter}{\numberline {A}Equations in Component Form}{21}{appendix.A}%
+\contentsline {chapter}{\numberline {B}To do}{28}{appendix.B}%

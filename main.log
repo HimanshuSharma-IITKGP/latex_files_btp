@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.25)  29 SEP 2024 19:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.25)  29 SEP 2024 19:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -344,7 +344,41 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count321
 \l__lipsum_a_int=\count322
 \l__lipsum_b_int=\count323
- (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))) (main.aux (frontmatter/titlepage.aux) (frontmatter/certificate.aux) (frontmatter/declaration.aux) (frontmatter/abstract.aux) (chapters/Introduction.aux) (chapters/problem_description.aux) (chapters/mathematical_model.aux) (chapters/appendix1.aux) (chapters/appendix2.aux))
+ (C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))) (main.aux (frontmatter/titlepage.aux) (frontmatter/certificate.aux) (frontmatter/declaration.aux) (frontmatter/abstract.aux) (chapters/Introduction.aux) (chapters/problem_description.aux) (chapters/mathematical_model.aux
+
+LaTeX Warning: Label `eq:F_tensor' multiply defined.
+
+
+LaTeX Warning: Label `eq:F_decomposition' multiply defined.
+
+
+LaTeX Warning: Label `fig:decomposition' multiply defined.
+
+
+LaTeX Warning: Label `eq:Finel_decomposition' multiply defined.
+
+
+LaTeX Warning: Label `eq:M_tensor' multiply defined.
+
+
+LaTeX Warning: Label `section:MechEqbm' multiply defined.
+
+
+LaTeX Warning: Label `eq:Fel_tensor' multiply defined.
+
+
+LaTeX Warning: Label `eq:Sel_tensor' multiply defined.
+
+
+LaTeX Warning: Label `eq:S_tensor' multiply defined.
+
+
+LaTeX Warning: Label `eq:P_tensor' multiply defined.
+
+
+LaTeX Warning: Label `section:nonDim' multiply defined.
+
+) (chapters/appendix1.aux) (chapters/appendix2.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -392,7 +426,7 @@ Package hyperref Info: Link coloring OFF on input line 6.
 \openout2 = `./frontmatter/titlepage.aux'.
 
  (frontmatter/titlepage.tex
-<./figures/./iitkgplogo.JPG, id=61, 918.43124pt x 1027.84pt>
+<./figures/./iitkgplogo.JPG, id=93, 918.43124pt x 1027.84pt>
 File: ./figures/./iitkgplogo.JPG Graphic file (type jpg)
 <use ./figures/./iitkgplogo.JPG>
 Package pdftex.def Info: ./figures/./iitkgplogo.JPG  used on input line 23.
@@ -433,15 +467,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
 
 
-] (main.toc)
+] (main.toc [5
+
+
+
+])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [5
-
-
-
-]
+ [6]
 \openout2 = `./chapters/Introduction.aux'.
 
  (chapters/Introduction.tex
@@ -464,7 +498,7 @@ Package epstopdf Info: Source file: <figures/probDescFigs/drawing.eps>
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/probDescFigs/drawing-eps-converted-to.pdf figures/probDescFigs/drawing.eps>
 (epstopdf)             \includegraphics on input line 5.
 Package epstopdf Info: Output file is already uptodate.
-<figures/probDescFigs/drawing-eps-converted-to.pdf, id=113, 555.07375pt x 196.735pt>
+<figures/probDescFigs/drawing-eps-converted-to.pdf, id=157, 555.07375pt x 196.735pt>
 File: figures/probDescFigs/drawing-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/probDescFigs/drawing-eps-converted-to.pdf>
 Package pdftex.def Info: figures/probDescFigs/drawing-eps-converted-to.pdf  used on input line 5.
@@ -492,19 +526,52 @@ Package epstopdf Info: Source file: <figures/mathFormFigs/decomposition.eps>
 (epstopdf)                    date: 2024-09-28 15:49:52
 (epstopdf)                    size: 24411 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=figures/mathFormFigs/decomposition-eps-converted-to.pdf figures/mathFormFigs/decomposition.eps>
-(epstopdf)             \includegraphics on input line 36.
+(epstopdf)             \includegraphics on input line 35.
 Package epstopdf Info: Output file is already uptodate.
-<figures/mathFormFigs/decomposition-eps-converted-to.pdf, id=159, 487.8225pt x 175.65625pt>
+<figures/mathFormFigs/decomposition-eps-converted-to.pdf, id=203, 487.8225pt x 175.65625pt>
 File: figures/mathFormFigs/decomposition-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/mathFormFigs/decomposition-eps-converted-to.pdf>
-Package pdftex.def Info: figures/mathFormFigs/decomposition-eps-converted-to.pdf  used on input line 36.
+Package pdftex.def Info: figures/mathFormFigs/decomposition-eps-converted-to.pdf  used on input line 35.
 (pdftex.def)             Requested size: 433.62pt x 156.14058pt.
 
-Overfull \hbox (3.35922pt too wide) in paragraph at lines 42--43
+Overfull \hbox (20.88867pt too wide) in paragraph at lines 34--36
+ []        [] 
+ []
+
+
+Overfull \hbox (3.35922pt too wide) in paragraph at lines 41--42
 []\OT1/cmr/m/n/12 The in-elas-tic de-for-ma-tion gra-di-ent ten-sor, $\OT1/cmr/bx/n/12 F[]$\OT1/cmr/m/n/12 , has con-tri-bu-tions from two sources.
  []
 
-[6 <./figures/mathFormFigs/decomposition-eps-converted-to.pdf>] [7] [8] [9] [10] [11]) [12]
+[6 <./figures/mathFormFigs/decomposition-eps-converted-to.pdf>] [7] [8] [9] [10] [11] [12]
+Chapter 4.
+[13
+
+]
+Package epstopdf Info: Source file: <figures/mathFormFigs/decomposition.eps>
+(epstopdf)                    date: 2024-09-28 15:48:30
+(epstopdf)                    size: 107265 bytes
+(epstopdf)             Output file: <figures/mathFormFigs/decomposition-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-09-28 15:49:52
+(epstopdf)                    size: 24411 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/mathFormFigs/decomposition-eps-converted-to.pdf figures/mathFormFigs/decomposition.eps>
+(epstopdf)             \includegraphics on input line 286.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/mathFormFigs/decomposition-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/mathFormFigs/decomposition-eps-converted-to.pdf>
+Package pdftex.def Info: figures/mathFormFigs/decomposition-eps-converted-to.pdf  used on input line 286.
+(pdftex.def)             Requested size: 433.62pt x 156.14058pt.
+
+Overfull \hbox (20.88867pt too wide) in paragraph at lines 285--287
+ []        [] 
+ []
+
+
+Overfull \hbox (3.35922pt too wide) in paragraph at lines 292--293
+[]\OT1/cmr/m/n/12 The in-elas-tic de-for-ma-tion gra-di-ent ten-sor, $\OT1/cmr/bx/n/12 F[]$\OT1/cmr/m/n/12 , has con-tri-bu-tions from two sources.
+ []
+
+[14] [15] [16] [17] [18] [19]) [20]
 \openout2 = `./chapters/appendix1.aux'.
 
  (chapters/appendix1.tex
@@ -512,7 +579,7 @@ Appendix A.
 (chapters/equations/Fel_mat.tex) (chapters/equations/Eel_mat.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13
+ [21
 
 
 
@@ -520,10 +587,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]) (chapters/equations/tSel_mat.tex) (chapters/equations/tS_mat.tex) (chapters/equations/tP_mat.tex
 Underfull \vbox (badness 5756) has occurred while \output is active []
 
- [14]) (chapters/equations/tsigma_mat.tex) (chapters/equations/ttau_mat.tex) (chapters/equations/tMel_mat.tex
+ [22]) (chapters/equations/tsigma_mat.tex) (chapters/equations/ttau_mat.tex) (chapters/equations/tMel_mat.tex
 Underfull \vbox (badness 1152) has occurred while \output is active []
 
- [15]) (chapters/equations/Fpdot_mat.tex)
+ [23]) (chapters/equations/Fpdot_mat.tex)
 Overfull \hbox (18.11263pt too wide) detected at line 71
 []
  []
@@ -531,7 +598,7 @@ Overfull \hbox (18.11263pt too wide) detected at line 71
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
+ [24]
 Overfull \hbox (26.16876pt too wide) detected at line 90
 []
  []
@@ -539,17 +606,17 @@ Overfull \hbox (26.16876pt too wide) detected at line 90
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17] [18]) [19]
+ [25] [26]) [27]
 \openout2 = `./chapters/appendix2.aux'.
 
  (chapters/appendix2.tex
 Appendix B.
-) [20
+) [28
 
 
 
 
-] (main.bbl) [21
+] (main.bbl) [29
 
 
 
@@ -558,21 +625,25 @@ Appendix B.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D21898ACA5FBE9891FA81480CE334ECF;2062.
+(rerunfilecheck)             Checksum: 415AD177B867A07B253CCB903D8FE19E;3343.
  ) 
 Here is how much of TeX's memory you used:
- 12012 strings out of 474486
- 197882 string characters out of 5742339
+ 12087 strings out of 474486
+ 198863 string characters out of 5742339
  1972542 words of memory out of 5000000
- 33843 multiletter control sequences out of 15000+600000
+ 33851 multiletter control sequences out of 15000+600000
  568891 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,107p,840b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Himanshu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Himanshu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (26 pages, 651338 bytes).
+Output written on main.pdf (35 pages, 692280 bytes).
 PDF statistics:
- 519 PDF objects out of 1000 (max. 8388607)
- 177 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 686 PDF objects out of 1000 (max. 8388607)
+ 244 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 
