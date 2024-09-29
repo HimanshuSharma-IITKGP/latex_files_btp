@@ -1,11 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{preamble}[2014/08/21 preamble package]
 
-\setlength{\topmargin}{0.0in}
-\setlength{\oddsidemargin}{0.33in}
-\setlength{\evensidemargin}{-0.08in}
-\setlength{\textheight}{8.5in}
-\setlength{\textwidth}{6.0in}
+
+
+
+
 
 %%%%%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%%
 \RequirePackage{graphicx} 
@@ -25,6 +24,7 @@
 \graphicspath{{./figures/}}
 \newcommand{\heavi}{\mathrm{H}\left( \fc{\sigmaeff}{\sigmaf} - 1\right)}
 
+\newcommand{\note}[1]{{(\textcolor{red}{#1})}}
 \renewcommand{\implies}{\Longrightarrow}
 
 
@@ -148,19 +148,33 @@
 
 
 
+%%%%%%%%%%%%%%%% JJC %%%%%%%%%%%%55
 
+\setlength{\topmargin}{0.0in}
+\setlength{\oddsidemargin}{0.33in}
+\setlength{\evensidemargin}{-0.08in}
+\setlength{\textheight}{8.5in}
+\setlength{\textwidth}{6.0in}
 
+\setcitestyle{citesep={;}, aysep={,}, yysep={,}}
 
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\wrong}[1]{(\textcolor{red}{not #1})}
+\newcommand\emptypage{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
 
-
-
-
-
-
-\newcommand{\uI}{\langle u_{\rm{I}} \rangle}
-\newcommand{\uII}{u_{\rm{II}}}
-
-
+\def\mytitle{BTP-1}
+\def\myname{Himanshu Sharma}
+\def\mydegree{Dual Degree (B.Tech + M.Tech)}
+\def\mysupervisor{Dr. Jeevanjyoti Chakraborty}
+\def\myrollno{21ME33001}
+\def\mydep{Mechanical Engineering}
+\def\mydegreedate{Autumn Semester, 2024-2025}
+%%%%
 
 
 

@@ -11,5 +11,5 @@
 \contentsline {section}{\numberline {3.5}Diffusion}{9}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Non-dimensionalisation}{11}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Boundary and Initial Conditions}{11}{section.3.7}%
-\contentsline {chapter}{\numberline {A}Non-Dimensional Equations in Component Form}{13}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Equations in Component Form}{13}{appendix.A}%
 \contentsline {chapter}{\numberline {B}To do}{20}{appendix.B}%

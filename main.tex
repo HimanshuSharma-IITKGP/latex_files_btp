@@ -3,49 +3,12 @@
 
 \usepackage{preamble}
 
-
-
-\setlength{\marginparwidth}{0pt}
-\setlength{\oddsidemargin}{20pt}
-\setlength{\textwidth}{450pt}
-
-
-%%%%
-
-\newcommand{\bs}[1]{\boldsymbol{#1}}
-\newcommand{\wrong}[1]{(\textcolor{red}{not #1})}
-\newcommand{\note}[1]{{(\textcolor{red}{#1})}}
-\newcommand\emptypage{
-\newpage
-\thispagestyle{empty}
-\mbox{}
-\newpage
-}
-
-\def\mytitle{BTP-1}
-\def\myname{Himanshu Sharma}
-\def\mydegree{Dual Degree (B.Tech + M.Tech)}
-\def\mysupervisor{Dr. Jeevanjyoti Chakraborty}
-\def\myrollno{21ME33001}
-\def\mydep{Mechanical Engineering}
-\def\mydegreedate{Autumn Semester, 2024-2025}
-%%%%
-
-
 \begin{document}
-%\layout
-
-%this baselineskip gives sufficient line spacing for an examiner to easily
-%markup the thesis with comments
 \baselineskip=18pt plus1pt
-
-%set the number of sectioning levels that get number and appear in the contents
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
-% \maketitle
 
 
-% \pagebreak
 \pagenumbering{roman}
 \include{./frontmatter/titlepage}
 
@@ -54,12 +17,6 @@
 
 \addcontentsline{toc}{chapter}{Declaration}
 \include{./frontmatter/declaration}
-
-% \addcontentsline{toc}{chapter}{Acknowledgements}
-% \include{./frontmatter/acknowlegements}
-
-% \addcontentsline{toc}{chapter}{List of Symbols and Abbreviations}
-% \include{./frontmatter/symbabbrev} 
 
 \addcontentsline{toc}{chapter}{Abstract}
 \include{./frontmatter/abstract} 

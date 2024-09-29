@@ -1,5 +1,12 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Bhowmick \harvardand\ Chakraborty}{2023}{2023IJSSAmit}
+Bhowmick, A. \harvardand\ Chakraborty, J.  \harvardyearleft
+  2023\harvardyearright , `Predicting non-axisymmetric growth and facet
+  evolution during lithiation of crystalline silicon anode particles through
+  orientation-dependent interface reaction', {\em International Journal of
+  Solids and Structures} {\bf 273},~112266.
+
 \harvarditem[Bower et~al.]{Bower, Guduru \harvardand\
   Sethuraman}{2011}{2011JMPSBower}
 Bower, A.~F., Guduru, P.~R. \harvardand\ Sethuraman, V.~A.  \harvardyearleft
@@ -24,6 +31,11 @@ Gurtin, M.~E. \harvardand\ Anand, L.  \harvardyearleft 2005{\em
   b}\harvardyearright , `A theory of strain-gradient plasticity for isotropic,
   plastically irrotational materials. part ii: Finite deformations', {\em
   International Journal of Plasticity} {\bf 21}(12),~2297--2318.
+
+\harvarditem[Gurtin et~al.]{Gurtin, Fried \harvardand\ Anand}{2010}{2010Gurtin}
+Gurtin, M.~E., Fried, E. \harvardand\ Anand, L.  \harvardyearleft
+  2010\harvardyearright , {\em The mechanics and thermodynamics of continua},
+  Cambridge university press.
 
 \harvarditem[Lai et~al.]{Lai, Rubin \harvardand\ Krempl}{2009}{2009ContMechLai}
 Lai, W.~M., Rubin, D. \harvardand\ Krempl, E.  \harvardyearleft

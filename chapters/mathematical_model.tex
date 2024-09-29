@@ -33,7 +33,7 @@ Both Inelastic and elastic deformation gradients are considered to be finite \ci
 \end{gather}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{figures/decomposition.eps}
+    \includegraphics[width=\textwidth]{figures/mathFormFigs/decomposition.eps}
     \caption{Decomposition of deformation gradient into elastic and inelastic part.}
     \label{fig:decomposition}
 \end{figure}
@@ -46,28 +46,28 @@ The inelastic deformation gradient tensor, $\F^{\inel}$, has contribution from t
 Where $\F^\c$ and $\F^\p$ are deformation gradients due to diffusion and plastic flow, respectively.
 
 \section{Viscoplastic Flow}
-A viscoplastic constitutive relation of the following form is considered.
+A viscoplastic constitutive relation of the following form is considered:
 \begin{gather}
 \DP = \pdiff{G(\sigmaeff)}{\DCS}
 \end{gather}
 Where $\DP$ is the rate dependent plastic deformation tensor, $G(\sigmaeff)$ is the flow potential, $\DCS$ is the deviatoric part of Cauchy stress tensor and $\sigmaf$ is yield strength defined as 
 \[ \sigmaf =  \begin{cases} 
-      \sigma_{f, \si} & \text{ for Silicon} \\
-      \sigma_{f, {\rm{SEI}}} & \text{ for SEI layer}
+      \sigma_{f, \si} & \text{ for Silicon} \, \, (-L/2 \le X \le L/2 {\rm{ \quad and \quad}} 0 \le Y \le H) \\
+      \sigma_{f, {\rm{SEI}}} & \text{ for SEI layer} \, \, (-L/2 \le X \le L/2 {\rm{ \quad and \quad}} 0 \le Y \le H+H_{\rm{SEI}})
    \end{cases}
 \]
 
-Various studies \citep{2011JMPSBower,2012JMPSCui} have adopted a power law of following for flow potential
+Various studies \citep{2011JMPSBower,2012JMPSCui} have adopted a power law of following form for flow potential
 \begin{align}
-G(\sigmaeff) &= \fc{\sigmaf \dZEROdot}{\mathrm{m}+1}\left(\fc{\sigmaeff}{\sigmaf}-1\right)^{\mathrm{m}+1}\heavi. \\
+G(\sigmaeff) &= \fc{\sigmaf \dZEROdot}{\mathrm{m}+1}\left(\fc{\sigmaeff}{\sigmaf}-1\right)^{\mathrm{m}+1}\heavi \\
 \Rightarrow \mathbf{D}^{\rm{P}} &= \fc{3 \DCS \dZEROdot}{2 \sigmaeff}\left(\fc{\sigmaeff}{\sigmaf}-1\right)^{\mathrm{m}}\heavi.
 \end{align}
-where $\sigmaeff$ is the effective von Mises stress, defined in section \ref{section:MechEqbm}, H is the unit step function, $\sigmaf$ is the yield strength of Silicon, m is the stress exponent for plastic flow and $\dZEROdot$ is the strain rate for plastic flow. \note{read about the following equation from \citep{2005JMPSGurtin,2005IJPGurtin}}
+where $\sigmaeff$ is the effective von Mises stress, defined in section \ref{section:MechEqbm}, H is the unit step function, $\sigmaf$ is the yield strength of Silicon, m is the stress exponent for plastic flow and $\dZEROdot$ is the strain rate for plastic flow. Considering an irrotational plastic flow \citep{2005JMPSGurtin, 2005IJPGurtin,2023IJSSAmit} 
 \begin{align}
-\mathbf{D}^{\rm{P}} &= \F^{\el} \F^{\rm{c}} \dot{\F}^\p \inv{\F^\p} \inv{\F^{\rm{c}}} \inv{\F^{\el}}  \\
-\Rightarrow \dot{\F}^\p &= \inv{J} \fc{3}{2} \fc{\Mel \F^\p}{\sigmaeff} \dZEROdot \left( \fc{\sigmaeff}{\sigmaf} - 1 \right)^\m \heavi  \\
-\text{where }\Mel &= J (\F^\el)^\T \DCS (\F^\el)^\mT \label{eq:M_tensor} \\
-J &= \mathrm{det}(\F) 
+{\color{red}\mathbf{D}^{\rm{P}}} &= \F^{\el} \cdot \F^{\rm{c}} \cdot \dot{\F}^\p \cdot \inv{\F^\p} \cdot \inv{\F^{\rm{c}}} \cdot \inv{\F^{\el}}  \\
+\Rightarrow \dot{\F}^\p &= \inv{J} \fc{3}{2} \fc{\Mel \cdot \F^\p}{\sigmaeff} \dZEROdot \left( \fc{\sigmaeff}{\sigmaf} - 1 \right)^\m \heavi  \\
+\text{where }\Mel &= J (\F^\el)^\T \cdot \DCS \cdot (\F^\el)^\mT \label{eq:M_tensor} \\
+\text{and} J &= \mathrm{det}(\F). 
 \end{align}
 $\Mel$ is the deviatoric part of Mandel stress \citep{1971Mandel}. The expression for Mandel stress is 
 \begin{nonumbereq}
@@ -102,53 +102,53 @@ The elastic Green-Lagrange strain
 \E^{\el} = \fc{1}{2} \left[ (\F^\el)^\T \cdot  \F^\el - \I \right].
 \end{nonumbereq}
 
-The constitutive relation for the elastic deformation is expressed in terms of the strain energy per unit volume in the reference configuration, $W(\F, \tc)$, which is given by
-\begin{nonumbereq}
-    W(\F, \tc) = J^{\inel} \bar{w}(\F, \tc),
-\end{nonumbereq}where $\bar{w}(\F, \tc)$ is the strain energy per unit volume in the intermediate configuration and $J^{\inel} = \mathrm{det}(\F^{\inel}) = \jc$. Denoting the elasticity tensor of Silicon by $\mathbb{C}$ and its components by $C_{ijkl}$ (in the chosen basis),
+The constitutive relation for the elastic deformation is expressed in terms of the strain energy per unit volume in the intermediate configuration, $\hat{w}(\F, \tc)$. Denoting the elasticity tensor of Silicon by $\mathbb{C}$ and its components by $C_{ijkl}$,
 \begin{gather}
-    W(\F, \tc) = \jc \fc{1}{2} C_{ijkl} \Eel{ij} \Eel{kl}.
+    \hat{w}(\F, \tc) = \fc{1}{2} C_{ijkl} \Eel{ij} \Eel{kl}.
 \end{gather}
 $\mathbb{C}$ is concentration dependent and assumed to be isotropic. Hence, its components can be expressed in terms of Lam\'{e} coefficients as 
 \begin{align}
     C_{ijkl}(\tc) &= \lambda_{\rm{mat}}(\tc)\delta_{ij} \delta_{kl} +  \mu_{\rm{mat}}(\tc)(\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk}). \\
-    \implies W(\F, \tc) &= \fc{\jc}{2}\left[\lamSic (\tr{\E^\el})^2 + 2 \muSic \E^{\el}:\E^{\el}\right].
+    \implies \hat{w}(\F, \tc) &= \left[\lamSic (\tr{\E^\el})^2 + 2 \muSic \E^{\el}:\E^{\el}\right].
 \end{align}
 The lam\'{e} parameters, $\lamSic$ and $\muSic$ are given by
 \begin{align}
-    \lamSic = \fc{\EMatc \nuMat}{(1+\nuMat)(1-2\nuMat)} 
+    \lamSic = \fc{\EMatc \nuMat}{(1+\nuMat)(1-2\nuMat)},
     && \muSic = \fc{\EMatc}{2(1+\nuMat)}. \nonumber
 \end{align}
 The material properties $\EMatc$ and $\nuMat$ are defined domainwise as follows:
 \[\EMatc = \begin{cases}
-     E_{\text{si}}(1 + \eta_{\rm{E}} \chi_{\rm{max}} \tc) \text{  \quad for Silicon} \\
-     E_{\rm{SEI}} \text{ \quad  for SEI }
+     E_{\text{si}}(1 + \eta_{\rm{E}} \chi_{\rm{max}} \tc) \text{\quad for Silicon} \\
+     E_{\rm{SEI}} \text{\quad  for SEI }
 \end{cases} \text{ and }
 \nuMat = \begin{cases}
-     \nu_{\si}\text{ \quad for Silicon} \\
+     \nu_{\si} \text{\quad for Silicon} \\
      \nu_{\rm{SEI}} \text{\quad for SEI }
 \end{cases}\]
 The elastic second Piola-Kirchhoff stress is denoted by $\PKS^\el$. Therefore, 
 \begin{align}
-    \PKS^\el &= \pdiff{W(\F, \tc)}{\E^{\el}}\nonumber \\
-    \implies  \PKS^\el &= \jc[\lamSic \tr{\E^\el}\I + 2 \muSic \E^\el ]. \label{eq:Sel_tensor}
+    \PKS^\el &= \pdiff{\hat{w}(\F, \tc)}{\E^{\el}}\nonumber \\
+    \implies  \PKS^\el &= \lamSic \tr{\E^\el}\I + 2 \muSic \E^\el. \label{eq:Sel_tensor}
 \end{align}
-Let $\PK$ and $\PKS$ denote the first and second Piola-Kirchhoff stress, respectively. Thus
-\note{read about the following equation}
+Let $\PKS$ denote the second Piola-Kirchhoff stress. Now, by pulling back $\PKS^{\el}$ from the intermediate configuration to the reference configuration \citep{2010Gurtin} the second Piola-Kirchhoff stress is obtained as
 \begin{align}
-    \PKS &= \inv{\F^\c} \cdot  \inv{\F^\p} \cdot \PKS^\el \cdot  \invT{\F^\p} \cdot \invT{\F^\c}, \label{eq:S_tensor}\\
-    \PK &= \F \cdot  \PKS  \label{eq:P_tensor}
+    \PKS = J^{\inel} \, \inv{\F^\inel} \cdot  \PKS^\el \cdot  \invT{\F^\inel} &= \jc \, \inv{\F^{\p} \cdot \F^{\c}} \cdot \PKS^{\el} \cdot \invT{\F^\p \cdot \F^\c}\nonumber\\
+    \implies \PKS &= (\jc)^{1/3} \inv{\F^\p} \cdot \PKS^{\el} \cdot  \invT{\F^\p}.\label{eq:S_tensor}
 \end{align}
+And the first Piola-Kirchhoff stress is
+\begin{gather}
+    \PK = \F \cdot  \PKS  \label{eq:P_tensor}.
+\end{gather}
 The Cauchy stress tensor, $\CS$, is given by 
-\begin{nonumbereq}\CS = \inv{J} \PK \cdot  \F^\T\
-\end{nonumbereq}. And, the deviatoric part of Cauchy is \begin{nonumbereq}\DCS = \CS - (1/3)\tr{\CS}\I
-\end{nonumbereq}.
+\begin{nonumbereq}\CS = \inv{J} \F \cdot  \PKS  \cdot  \F^\T.
+\end{nonumbereq} The deviatoric part of Cauchy stress is \begin{nonumbereq}\DCS = \CS - (1/3)\tr{\CS}\I.
+\end{nonumbereq}
 The von Mises stress is 
 \begin{nonumbereq}
-    \sigmaeff = \sqrt{\fc{3}{2}\tau_{ij}\tau_{ij}} 
-\end{nonumbereq}.
+    \sigmaeff = \sqrt{\fc{3}{2}\tau_{ij}\tau_{ij}}. 
+\end{nonumbereq}
 
-Conservation of momentum leads to 
+In the absence of any body forces, the conservation of momentum leads to 
 \begin{gather}
 \bm{\nabla}_\X \cdot \PK = 0.
 \end{gather}
@@ -162,19 +162,35 @@ Where $\bm{j}$ is the flux vector and $c$ is a dimensional measure of Li-ions co
 \begin{nonumbereq}
     c = \tc \, \xmax/\vmb.
 \end{nonumbereq}
-$\bm{j}$ is given by, \note{how is the following equation derived.}
+In the current configuration the flux is denoted by $\bm{\hat{j}}(\x, t)$ and it is given by: \note{cite a paper which describes the following equation}
 \begin{gather}
-    \bm{j} = - \fc{1}{R_g T} \fc{D\xmax \tc}{V^b_m} \inv{\F} \invT{\F} \nablaX \mu.
+    \bm{\hat{j}(\x, t)} = -\fc{1}{R_g T} \fc{D \xmax \tc}{\vmb} \nabla_{\x} \mu
+\end{gather} 
+where $R_g$ is the universal gas constant, $T$ is the operating temperature, $D$ is the diffusivity of Li$_{\chi}$Si, $\vmb$ is the partial molar volume of Silicon and $\mu$ is the chemical potential. Diffusivity, is related to the state of stress by the following equation:
+\begin{gather} 
+    D = D_0 \rm{exp}(\fc{\alpha S_h}{E_0}) = D_0 \rm{exp}\left(\alpha \frac{{S}_{11}+{S}_{33}}{2 E_0}\right)
 \end{gather}
-\note{$\mu$ is the potential.}
+where $E_0$ is defined in section \ref{section:nonDim}.\\
+In the reference configuration, the flux is $\bm{j}(\X, t)=J\inv{\F} \cdot \bm{\hat{j}}$ \note{how is the previous expression derived}. Now, 
 \begin{align}
-    \mu &= \mu_0 + \mu_s \\
-    \mu_0 &= R_g T \text{log}(\gamma \td{c}) \\
-    \mu_s &= \fc{V_m^b}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}{C}_{mnkl}\tEel{kl} + \fc{1}{2}\left(\jc \pdiff{C_{ijkl}}{\tc} + \pdiff{\jc}{\tc} C_{ijkl}\right)\tEel{ij}\tEel{kl}\right] \\
-    D &= D_0 \rm{exp}(\fc{\alpha S_h}{E_0}) = D_0 \rm{exp}\left(\alpha \frac{{S}_{11}+{S}_{33}}{2 E_0}\right) \\ 
-    \gamma &= \fc{1}{1-\td{c}}\text{exp}(\fc{1}{R_g T}[2(A_0 - 2B_0)\td{c} - 3(A_0 - B_0)(\td{c}^2)])
+ (\nabla_{\x} \mu)_{i} &= \pdiff{\mu}{x_i} \nonumber \\
+                        &= \pdiff{\mu}{X_j}\pdiff{X_j}{x_i} \nonumber\\
+\implies \nabla_{\x} \mu &= \F^{-\T} \cdot \nabla_{X}\mu.
 \end{align}
-
+From above equations, the flux, $\bm{j}(\X, t)$, in Lagrangian description is expressed as
+\begin{align}
+   \bm{j} = - \fc{1}{R_g T} \fc{D\xmax \tc}{V^b_m} \inv{\F} \cdot \invT{\F} \cdot \nablaX \mu.
+\end{align}
+The chemical potential $\mu$ is composed of two parts: $\mu = \mu_0 + \mu_{\rm{s}}$, where $\mu_0$ and $\mu_{\rm{s}}$ are the stress-independent and stress-dependent part, respectively. $\mu_0$ can be written as \begin{nonumbereq}
+   \mu_0 = R_g T \rm{log}(\gamma \tc), 
+\end{nonumbereq} where $\gamma$ is the activity coefficient and considered to be concentration dependent, given by the following equation:
+\begin{align}
+    \gamma &= \fc{1}{1-\td{c}}\text{exp}(\fc{1}{R_g T}[2(A_0 - 2B_0)\td{c} - 3(A_0 - B_0)(\td{c}^2)]).
+\end{align}
+The stress-dependent part of the chemical potential is \citep{2012JMPSCui}
+\begin{align}
+    \mu_s &= \fc{V_m^b}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}{C}_{mnkl}\tEel{kl} + \fc{1}{2}\left(\jc \pdiff{C_{ijkl}}{\tc} + \pdiff{\jc}{\tc} C_{ijkl}\right)\tEel{ij}\tEel{kl}\right].
+\end{align}
 State of charge is a measure of the degree of lithiation. It is expressed as an average concentration over the domain as follows:
 \begin{align}
     \rm{soc} &= \fc{1}{LH}\int_{-L/2}^{L/2} \int_0^H \tc \rm{d}y \rm{d}x  \nonumber \\
@@ -182,7 +198,7 @@ State of charge is a measure of the degree of lithiation. It is expressed as an 
          &= \fc{H}{L}\int_{-L/2H}^{L/2H} \int_0^1 \tc(\td{x}, \td{y}) \rm{d}\td{y} \rm{d}\td{x} 
 \end{align}
 
-\section{Non-dimensionalisation}
+\section{Non-dimensionalisation}\label{section:nonDim}
 \begin{align}
     \td{j}_X, \td{j}_Y, \td{J}_0, \td{\bm{j}} &=  \fc{H \vmb}{(\xmax D_0)} (j_X, j_y, J_0, \bm{j}) \\
     \tX, \tY, \tu, \tv &= \fc{1}{H}(X, Y, u, v) \\
@@ -195,7 +211,6 @@ State of charge is a measure of the degree of lithiation. It is expressed as an 
      \td{\PKS}^{\el}, \td{\PKS}, \td{\PK}, \td{\CS}, \td{\DCS}, \td{\mathbf{M}}^{\el}_{0}, \td{\sigma}_{\rm{eff}}, \td{\sigma}_{\rm{f}} &= \fc{1}{E_0}(\PKS^{\el}, \PKS, \PK, \CS, \DCS, \mathbf{M}^{\el}_{0}, \sigmaeff, \sigmaf)
 \end{align}
 
-
 \section{Boundary and Initial Conditions}
 The initial composition is taken to be Li$_{\chi_{0}}$Si which is a stress free state with $\tc$ being zero.
 \begin{align}
@@ -203,13 +218,11 @@ The initial composition is taken to be Li$_{\chi_{0}}$Si which is a stress free 
     \tu(\tX, \tY, 0) = 0,\\
     \tv(\tX, \tY, 0) = 0.
 \end{align}
-\clearpage
 The bottom face is considered to be fixed and the two side faces can exhibit motion in Y-direction only. Therefore,
 \begin{align}
     \tu(\tX, 0, \tt) = \tv(\tX, 0, \tt) = 0, \\
     \tu(-1/2, \tY, \tt) =  \tu(1/2, \tY, \tt) = 0.
 \end{align}
-
 There is a flux from the top surface, which is considered to be of the following form: 
 \begin{align}
     \text{During Lithiation, }\td{j}_x(\tX, 1, \tt) &= \td{j}_0 (1 - \tc(\tX, 1, \tt)) \text{ and } \\
