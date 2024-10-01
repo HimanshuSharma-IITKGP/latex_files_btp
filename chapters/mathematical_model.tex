@@ -54,7 +54,7 @@ Various studies \citep{2011JMPSBower,2012JMPSCui} have adopted a power law of th
 G(\sigmaeff) &= \fc{\sigmaf \dZEROdot}{m+1}\left(\fc{\sigmaeff}{\sigmaf}-1\right)^{m+1}\heavi \\
 \Rightarrow \mathbf{D}^{\rm{P}} &= \fc{3 \DCS \dZEROdot}{2 \sigmaeff}\left(\fc{\sigmaeff}{\sigmaf}-1\right)^{m}\heavi.
 \end{align}
-Where $\sigmaeff$ is the effective von Mises stress, defined in section \ref{section:MechEqbm}, H is the unit step function, $\sigmaf$ is the yield strength of Silicon, m is the stress exponent for plastic flow and $\dZEROdot$ is the strain rate for plastic flow. Considering an irrotational plastic flow \note{read about the following equations} \citep{2005JMPSGurtin, 2005IJPGurtin,2023IJSSAmit} 
+Where $\sigmaeff$ is the effective von Mises stress, defined in section \ref{section:MechEqbm}, H is the unit step function, $\sigmaf$ is the yield strength of Silicon, m is the stress exponent for plastic flow and $\dZEROdot$ is the strain rate for plastic flow. Considering an irrotational plastic flow \citep{2005JMPSGurtin, 2005IJPGurtin,2023IJSSAmit} 
 \begin{align}
 \mathbf{D}^{\rm{P}} &= \F^{\el} \cdot \F^{\rm{c}} \cdot \dot{\F}^\p \cdot \inv{\F^\p} \cdot \inv{\F^{\rm{c}}} \cdot \inv{\F^{\el}}  \\
 \Rightarrow \dot{\F}^\p &= \inv{J} \fc{3}{2} \fc{\Mel \cdot \F^\p}{\sigmaeff} \dZEROdot \left( \fc{\sigmaeff}{\sigmaf} - 1 \right)^m \heavi, \\
@@ -112,15 +112,17 @@ The lam\'{e} parameters, $\lamSic$ and $\muSic$ are given by
     \lamSic = \fc{\EMatc \nuMat}{(1+\nuMat)(1-2\nuMat)},
     && \muSic = \fc{\EMatc}{2(1+\nuMat)}. \nonumber
 \end{align}
-The material properties $\EMatc$ and $\nuMat$ are defined domainwise as follows:
-\[\EMatc = \begin{cases}
- E_{\text{si}}(1 + \eta_{\rm{E}} \chi_{\rm{max}} \tc) \text{\quad for Silicon} \\
- E_{\rm{SEI}} \text{\quad for SEI }
-\end{cases} \text{ and }
-\nuMat = \begin{cases}
-     \nu_{\si} \text{\quad for Silicon} \\
-     \nu_{\rm{SEI}} \text{\quad for SEI }
-\end{cases}\]
+The material properties $\EMatc$ and $\nuMat$ are defined domain-wise as follows:
+\begin{align}
+\EMatc &= \begin{cases}
+ E_{\text{si}}(1 + \eta_{\rm{E}} \chi_{\rm{max}} \tc) & \text{for Silicon}\\
+ E_{\rm{SEI}} & \text{for SEI }
+\end{cases} \\
+\nuMat &= \begin{cases}
+\nu_{\rm{si}} & \text{for Silicon} \\
+\nu_{\rm{SEI}} &  \text{for SEI }
+\end{cases}
+\end{align}
 The elastic second Piola-Kirchhoff stress, which can be \textit{visualized} as the second Piola-Kirchhoff stress in the intermediate configuration, is denoted by $\PKS^\el$. Therefore, 
 \begin{align}
     \PKS^\el &= \pdiff{\hat{w}(\F, \tc)}{\E^{\el}}\nonumber \\
@@ -164,7 +166,7 @@ In the current configuration, the flux is denoted by $\bm{\hat{j}}(\x, t)$ and i
 \end{gather} 
 where $R_g$ is the universal gas constant, $T$ is the operating temperature, $D$ is the diffusivity of Li$_{\chi}$Si, $\vmb$ is the partial molar volume of Silicon and $\mu$ is the chemical potential. Diffusivity is related to the state of stress by the following equation:
 \begin{gather} 
- D = D_0 \rm{exp}\left(\fc{\alpha S_h}{E_0}\right) = D_0 \rm{exp}\left(\alpha \frac{{S}_{11}+{S}_{33}}{2 E_0}\right), 
+ D = D_0 {\rm{exp}}\left(\fc{\alpha S_h}{E_0}\right) = D_0 {\rm{exp}}\left(\alpha \frac{{S}_{11}+{S}_{33}}{2 E_0}\right), 
 \end{gather}
 where $E_0$ is defined in section \ref{section:nonDim}. \\
 Let the flux in the reference configuration be denoted by $\bm{j}(\X, t)$. One can relate $\bm{j}(\X, t)$ and $\bm{\hat{j}}(\x, t)$ by considering two infinitesimal areas, $\Delta A_0$ and $\Delta A$ with respectively normals $\bm{n}_0$ and $\bm{n}$, in the reference and current configuration, respectively. From Nanson's formula 
@@ -181,7 +183,7 @@ Let the flux in the reference configuration be denoted by $\bm{j}(\X, t)$. One c
 \end{align}
 From above equations, the flux vector in Lagrangian description is expressed as
 \begin{align}
-   \bm{j} = - \fc{1}{R_g T} \fc{D\xmax \tc}{V^b_m} \inv{\F} \cdot \invT{\F} \cdot \nablaX \mu.
+   \bm{j} = - \fc{1}{R_g T} \fc{D\xmax \tc}{\vmb} \F^{-1} \cdot \F^{-\T} \cdot \nablaX \mu.
 \end{align}
 The chemical potential $\mu$ is composed of two parts: $\mu = \mu_0 + \mu_{\rm{s}}$, where $\mu_0$ and $\mu_{\rm{s}}$ are the stress-independent and stress-dependent part, respectively. $\mu_0$ can be written as \begin{nonumbereq}
    \mu_0 = R_g T \rm{log}(\gamma \tc), 
@@ -202,7 +204,7 @@ State of charge (soc) is a measure of the degree of lithiation. It is expressed 
 
 \section{Non-dimensionalisation}\label{section:nonDim}
 \begin{align}
-    \td{j}_X, \td{j}_Y, \td{j}_0, \td{\bm{j}} &=  \fc{H \vmb}{(\xmax D_0)} (j_X, j_y, J_0, \bm{j}) \\
+    \td{j}_X, \td{j}_Y, \td{J}_0, \td{\bm{j}} &=  \fc{H \vmb}{(\xmax D_0)} (j_X, j_y, J_0, \bm{j}) \\
     \tX, \tY, \tu, \tv &= \fc{1}{H}(X, Y, u, v) \\
     \td{t} &= D_0 t/H^2 \\
      \tmusi, \tlamsi, \td{E}_{\text{si}} &= \fc{1}{E_0} (\mu_{\text{si}}, \lambda_{\text{si}}, E_{\text{si}}) 
@@ -213,12 +215,20 @@ State of charge (soc) is a measure of the degree of lithiation. It is expressed 
      \td{\PKS}^{\el}, \td{\PKS}, \td{\PK}, \td{\CS}, \td{\DCS}, \td{\mathbf{M}}^{\el}_{0}, \td{\sigma}_{\rm{eff}}, \td{\sigma}_{\rm{f}} &= \fc{1}{E_0}(\PKS^{\el}, \PKS, \PK, \CS, \DCS, \mathbf{M}^{\el}_{0}, \sigmaeff, \sigmaf)
 \end{align}
 
-\section{Boundary and Initial Conditions}
-The initial composition is taken to be Li$_{\chi_{0}}$Si, which is a stress-free state with $\tc$ being zero.
+\section{Interface, Boundary and Initial Conditions}
+At the Interface, continuity of displacement and traction vector is imposed. This gives
 \begin{align}
-    \tc(\tX, \tY, 0) = 0, \\
-    \tu(\tX, \tY, 0) = 0,\\
-    \tv(\tX, \tY, 0) = 0.
+    \tu(\tX, 1^{-}, \tt) = \tu(\tX, 1^{+}, \tt), \\
+    \tv(\tX, 1^{-}, \tt) = \tv(\tX, 1^{+}, \tt), \\
+    \bm{t}(\tX, 1^{-}, \tt) = \bm{t}(\tX, 1^{+}, \tt).
+\end{align}
+The initial composition is taken to be Li$_{\chi{_{0}}}$Si, which is a stress-free state with $\tc$ being zero.
+\begin{align}
+    \tc(\tX, \tY, 0) &= 0, \\
+    \tu(\tX, \tY, 0) &= 0,\\
+    \tv(\tX, \tY, 0) &= 0, \\
+    \lamxx(\tX, \tY, 0) &= \lamyy(\tX, \tY, 0) = 1, \\
+    \lamxy(\tX, \tY, 0) &= \lamyx(\tX, \tY, 0) = 0.
 \end{align}
 The bottom face is considered fixed, and the two sides can only exhibit motion in the Y-direction. Therefore,
 \begin{align}
@@ -227,8 +237,8 @@ The bottom face is considered fixed, and the two sides can only exhibit motion i
 \end{align}
 There is a flux from the top surface, which is considered to be of the following form: 
 \begin{align}
-    \text{During Lithiation, }\td{j}_x(\tX, 1, \tt) &= \td{j}_0 (1 - \tc(\tX, 1, \tt)) \text{ and } \\
-    \text{During Delithiation, }\td{j}_x(\tX, 1, \tt) &= \td{j}_0 \tc(\tX, 1, \tt).
+    \text{During Lithiation, }\td{j}_x(\tX, 1, \tt) &= \td{J}_0 (1 - \tc(\tX, 1, \tt)) \text{ and } \\
+    \text{During Delithiation, }\td{j}_x(\tX, 1, \tt) &= -\td{J}_0 \tc(\tX, 1, \tt).
 \end{align} 
 \vspace{4em}
 \begin{table}[H]
@@ -243,7 +253,7 @@ $E_{\si}$, Elastic modulus of pure silicon & 90 GPa \\
 $E_{\rm{SEI}}$, Elastic modulus of SEI layer & 3-10 GPa \\
 $\nu_{\si}$, Poisson's ratio of pure Silicon & 0.22\\
 $\nu_{\rm{SEI}}$, Poisson's ratio of SEI layer & 0.30\\
-$\sigma_{f,\si}$, Yield strength of pure Silicon & 1.5Gpa\\
+$\sigma_{f,\si}$, Yield strength of pure Silicon & 1.5GPa\\
 $\sigma_{f, {\rm{SEI}}}$, Yield strength of SEI layer & \\
 $R_g$, Universal gas constant & 8.314 JK$^{-1}$mol$^{-1}$\\
 $T$, Temperature & 298.15 K\\

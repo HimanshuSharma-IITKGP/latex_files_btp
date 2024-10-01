@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {3.2}Viscoplastic Flow}{6}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Diffusion Induced Deformation}{7}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Mechanical Equilibrium }{8}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Diffusion}{9}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Non-dimensionalisation}{11}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Boundary and Initial Conditions}{12}{section.3.7}%
-\contentsline {chapter}{\numberline {A}Equations in Component Form}{13}{appendix.A}%
+\contentsline {section}{\numberline {3.5}Diffusion}{10}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Non-dimensionalisation}{12}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Interface, Boundary and Initial Conditions}{12}{section.3.7}%
+\contentsline {chapter}{\numberline {A}Equations in Component Form}{15}{appendix.A}%

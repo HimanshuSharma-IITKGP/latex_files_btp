@@ -1,7 +1,7 @@
 PWD c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp
 INPUT C:\Users\Himanshu\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\main.tex
-OUTPUT main.log
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.log
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\base\fleqn.clo
@@ -136,34 +136,34 @@ INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3back
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\lipsum\lipsum.ltd.tex
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\lipsum\lipsum.ltd.tex
-INPUT .\main.aux
-INPUT .\main.aux
-INPUT main.aux
-INPUT .\frontmatter\titlepage.aux
-INPUT .\frontmatter\titlepage.aux
-INPUT frontmatter\titlepage.aux
-INPUT .\frontmatter\certificate.aux
-INPUT .\frontmatter\certificate.aux
-INPUT frontmatter\certificate.aux
-INPUT .\frontmatter\declaration.aux
-INPUT .\frontmatter\declaration.aux
-INPUT frontmatter\declaration.aux
-INPUT .\frontmatter\abstract.aux
-INPUT .\frontmatter\abstract.aux
-INPUT frontmatter\abstract.aux
-INPUT .\chapters\Introduction.aux
-INPUT .\chapters\Introduction.aux
-INPUT chapters\Introduction.aux
-INPUT .\chapters\problem_description.aux
-INPUT .\chapters\problem_description.aux
-INPUT chapters\problem_description.aux
-INPUT .\chapters\mathematical_model.aux
-INPUT .\chapters\mathematical_model.aux
-INPUT chapters\mathematical_model.aux
-INPUT .\chapters\appendix1.aux
-INPUT .\chapters\appendix1.aux
-INPUT chapters\appendix1.aux
-OUTPUT main.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\titlepage.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\titlepage.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\titlepage.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\certificate.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\certificate.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\certificate.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\declaration.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\declaration.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\declaration.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\abstract.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\abstract.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\abstract.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\Introduction.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\Introduction.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\Introduction.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\problem_description.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\problem_description.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\problem_description.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\mathematical_model.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\mathematical_model.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\mathematical_model.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\appendix1.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\appendix1.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\appendix1.aux
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.aux
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -172,17 +172,17 @@ INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\eps
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT .\main.out
-INPUT .\main.out
-INPUT main.out
-INPUT main.out
-OUTPUT main.pdf
-INPUT .\main.out
-INPUT .\main.out
-OUTPUT main.out
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.pdf
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
 INPUT .\frontmatter\titlepage.tex
 INPUT .\frontmatter\titlepage.tex
-OUTPUT .\frontmatter\titlepage.aux
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\titlepage.aux
 INPUT .\frontmatter\titlepage.tex
 INPUT .\frontmatter\titlepage.tex
 INPUT frontmatter\titlepage.tex
@@ -232,38 +232,38 @@ INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\
 INPUT C:\Users\Himanshu\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\frontmatter\certificate.tex
 INPUT .\frontmatter\certificate.tex
-OUTPUT .\frontmatter\certificate.aux
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\certificate.aux
 INPUT .\frontmatter\certificate.tex
 INPUT .\frontmatter\certificate.tex
 INPUT frontmatter\certificate.tex
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\frontmatter\declaration.tex
 INPUT .\frontmatter\declaration.tex
-OUTPUT .\frontmatter\declaration.aux
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\declaration.aux
 INPUT .\frontmatter\declaration.tex
 INPUT .\frontmatter\declaration.tex
 INPUT frontmatter\declaration.tex
 INPUT .\frontmatter\abstract.tex
 INPUT .\frontmatter\abstract.tex
-OUTPUT .\frontmatter\abstract.aux
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\abstract.aux
 INPUT .\frontmatter\abstract.tex
 INPUT .\frontmatter\abstract.tex
 INPUT frontmatter\abstract.tex
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\main.toc
-INPUT .\main.toc
-INPUT main.toc
-OUTPUT main.toc
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.toc
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.toc
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.toc
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.toc
 INPUT .\chapters\Introduction.tex
 INPUT .\chapters\Introduction.tex
-OUTPUT .\chapters\Introduction.aux
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\Introduction.aux
 INPUT .\chapters\Introduction.tex
 INPUT .\chapters\Introduction.tex
 INPUT chapters\Introduction.tex
 INPUT .\chapters\problem_description.tex
 INPUT .\chapters\problem_description.tex
-OUTPUT .\chapters\problem_description.aux
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\problem_description.aux
 INPUT .\chapters\problem_description.tex
 INPUT .\chapters\problem_description.tex
 INPUT chapters\problem_description.tex
@@ -281,7 +281,7 @@ INPUT .\figures\probDescFigs\drawing-eps-converted-to.pdf
 INPUT .\figures\probDescFigs\drawing-eps-converted-to.pdf
 INPUT .\chapters\mathematical_model.tex
 INPUT .\chapters\mathematical_model.tex
-OUTPUT .\chapters\mathematical_model.aux
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\mathematical_model.aux
 INPUT .\chapters\mathematical_model.tex
 INPUT .\chapters\mathematical_model.tex
 INPUT chapters\mathematical_model.tex
@@ -297,14 +297,12 @@ INPUT .\figures\mathFormFigs\decomposition-eps-converted-to.pdf
 INPUT .\figures\mathFormFigs\decomposition-eps-converted-to.pdf
 INPUT .\figures\mathFormFigs\decomposition-eps-converted-to.pdf
 INPUT .\figures\mathFormFigs\decomposition-eps-converted-to.pdf
-INPUT .\figures\mathFormFigs\decomposition-eps-converted-to.pdf
-INPUT .\figures\mathFormFigs\decomposition-eps-converted-to.pdf
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss12.tfm
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
 INPUT .\chapters\appendix1.tex
 INPUT .\chapters\appendix1.tex
-OUTPUT .\chapters\appendix1.aux
+OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\appendix1.aux
 INPUT .\chapters\appendix1.tex
 INPUT .\chapters\appendix1.tex
 INPUT chapters\appendix1.tex
@@ -335,36 +333,36 @@ INPUT chapters\equations\tMel_mat.tex
 INPUT .\chapters\equations\Fpdot_mat.tex
 INPUT .\chapters\equations\Fpdot_mat.tex
 INPUT chapters\equations\Fpdot_mat.tex
-INPUT .\main.bbl
-INPUT .\main.bbl
-INPUT main.bbl
-INPUT main.aux
-INPUT .\frontmatter\titlepage.aux
-INPUT .\frontmatter\titlepage.aux
-INPUT frontmatter\titlepage.aux
-INPUT .\frontmatter\certificate.aux
-INPUT .\frontmatter\certificate.aux
-INPUT frontmatter\certificate.aux
-INPUT .\frontmatter\declaration.aux
-INPUT .\frontmatter\declaration.aux
-INPUT frontmatter\declaration.aux
-INPUT .\frontmatter\abstract.aux
-INPUT .\frontmatter\abstract.aux
-INPUT frontmatter\abstract.aux
-INPUT .\chapters\Introduction.aux
-INPUT .\chapters\Introduction.aux
-INPUT chapters\Introduction.aux
-INPUT .\chapters\problem_description.aux
-INPUT .\chapters\problem_description.aux
-INPUT chapters\problem_description.aux
-INPUT .\chapters\mathematical_model.aux
-INPUT .\chapters\mathematical_model.aux
-INPUT chapters\mathematical_model.aux
-INPUT .\chapters\appendix1.aux
-INPUT .\chapters\appendix1.aux
-INPUT chapters\appendix1.aux
-INPUT .\main.out
-INPUT .\main.out
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.bbl
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.bbl
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.bbl
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\titlepage.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\titlepage.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\titlepage.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\certificate.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\certificate.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\certificate.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\declaration.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\declaration.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\declaration.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\abstract.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\abstract.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\abstract.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\Introduction.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\Introduction.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\Introduction.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\problem_description.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\problem_description.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\problem_description.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\mathematical_model.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\mathematical_model.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\mathematical_model.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\appendix1.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\appendix1.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\appendix1.aux
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
+INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
 INPUT C:\Users\Himanshu\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\Himanshu\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbsy10.pfb
