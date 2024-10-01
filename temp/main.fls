@@ -142,12 +142,6 @@ INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\titlepage.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\titlepage.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\titlepage.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\certificate.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\certificate.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\certificate.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\declaration.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\declaration.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\declaration.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\abstract.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\abstract.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\abstract.aux
@@ -160,9 +154,6 @@ INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\mathematical_model.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\mathematical_model.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\mathematical_model.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\appendix1.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\appendix1.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\appendix1.aux
 OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.aux
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -172,6 +163,7 @@ INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\eps
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
@@ -230,25 +222,13 @@ INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy1
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy8.tfm
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy6.tfm
 INPUT C:\Users\Himanshu\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\frontmatter\certificate.tex
-INPUT .\frontmatter\certificate.tex
-OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\certificate.aux
-INPUT .\frontmatter\certificate.tex
-INPUT .\frontmatter\certificate.tex
-INPUT frontmatter\certificate.tex
-INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\frontmatter\declaration.tex
-INPUT .\frontmatter\declaration.tex
-OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\declaration.aux
-INPUT .\frontmatter\declaration.tex
-INPUT .\frontmatter\declaration.tex
-INPUT frontmatter\declaration.tex
 INPUT .\frontmatter\abstract.tex
 INPUT .\frontmatter\abstract.tex
 OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\abstract.aux
 INPUT .\frontmatter\abstract.tex
 INPUT .\frontmatter\abstract.tex
 INPUT frontmatter\abstract.tex
+INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.toc
@@ -300,39 +280,6 @@ INPUT .\figures\mathFormFigs\decomposition-eps-converted-to.pdf
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss12.tfm
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss8.tfm
-INPUT .\chapters\appendix1.tex
-INPUT .\chapters\appendix1.tex
-OUTPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\appendix1.aux
-INPUT .\chapters\appendix1.tex
-INPUT .\chapters\appendix1.tex
-INPUT chapters\appendix1.tex
-INPUT .\chapters\equations\Fel_mat.tex
-INPUT .\chapters\equations\Fel_mat.tex
-INPUT chapters\equations\Fel_mat.tex
-INPUT .\chapters\equations\Eel_mat.tex
-INPUT .\chapters\equations\Eel_mat.tex
-INPUT chapters\equations\Eel_mat.tex
-INPUT .\chapters\equations\tSel_mat.tex
-INPUT .\chapters\equations\tSel_mat.tex
-INPUT chapters\equations\tSel_mat.tex
-INPUT .\chapters\equations\tS_mat.tex
-INPUT .\chapters\equations\tS_mat.tex
-INPUT chapters\equations\tS_mat.tex
-INPUT .\chapters\equations\tP_mat.tex
-INPUT .\chapters\equations\tP_mat.tex
-INPUT chapters\equations\tP_mat.tex
-INPUT .\chapters\equations\tsigma_mat.tex
-INPUT .\chapters\equations\tsigma_mat.tex
-INPUT chapters\equations\tsigma_mat.tex
-INPUT .\chapters\equations\ttau_mat.tex
-INPUT .\chapters\equations\ttau_mat.tex
-INPUT chapters\equations\ttau_mat.tex
-INPUT .\chapters\equations\tMel_mat.tex
-INPUT .\chapters\equations\tMel_mat.tex
-INPUT chapters\equations\tMel_mat.tex
-INPUT .\chapters\equations\Fpdot_mat.tex
-INPUT .\chapters\equations\Fpdot_mat.tex
-INPUT chapters\equations\Fpdot_mat.tex
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.bbl
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.bbl
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.bbl
@@ -340,12 +287,6 @@ INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\titlepage.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\titlepage.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\titlepage.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\certificate.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\certificate.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\certificate.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\declaration.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\declaration.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\declaration.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\abstract.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\frontmatter\abstract.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\frontmatter\abstract.aux
@@ -358,9 +299,6 @@ INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\mathematical_model.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\mathematical_model.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\mathematical_model.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\appendix1.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\.\chapters\appendix1.aux
-INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\chapters\appendix1.aux
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
 INPUT c:\Users\Himanshu\OneDrive - iitkgp.ac.in\Mech\Semester-7\BTP\latex_files_btp\temp\main.out
 INPUT C:\Users\Himanshu\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
@@ -375,8 +313,6 @@ INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfont
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\Himanshu\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmib10.pfb

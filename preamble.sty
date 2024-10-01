@@ -19,7 +19,12 @@
 \usepackage{tabularx}
 \usepackage{indentfirst}
 \usepackage{lipsum}
+\usepackage{xcolor}
 
+%% Color 
+\definecolor{citationColor}{RGB}{0,127,172}
+\definecolor{linkColor}{RGB}{0, 0, 255}
+\hypersetup{ colorlinks=true, linkcolor=linkColor, citecolor=citationColor}
 
 \graphicspath{{./figures/}}
 \newcommand{\heavi}{\mathrm{H}\left( \fc{\sigmaeff}{\sigmaf} - 1\right)}
@@ -166,7 +171,7 @@
 \newpage
 }
 
-\def\mytitle{BTP-1}
+\def\mytitle{Paper}
 \def\myname{Himanshu Sharma}
 \def\mydegree{Dual Degree (B.Tech + M.Tech)}
 \def\mysupervisor{Dr. Jeevanjyoti Chakraborty}

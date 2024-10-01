@@ -3,10 +3,6 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: ./frontmatter/titlepage.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
-A level-1 auxiliary file: ./frontmatter/certificate.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
-A level-1 auxiliary file: ./frontmatter/declaration.aux
 Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: ./frontmatter/abstract.aux
 Reallocating 'name_of_file' (item size: 1) to 28 items.
@@ -15,15 +11,13 @@ Reallocating 'name_of_file' (item size: 1) to 35 items.
 A level-1 auxiliary file: ./chapters/problem_description.aux
 Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: ./chapters/mathematical_model.aux
-Reallocating 'name_of_file' (item size: 1) to 25 items.
-A level-1 auxiliary file: ./chapters/appendix1.aux
 Reallocating 'name_of_file' (item size: 1) to 5 items.
 The style file: agsm.bst
 Reallocating 'name_of_file' (item size: 1) to 5 items.
 Database file #1: refs.bib
 You've used 10 entries,
             2909 wiz_defined-function locations,
-            721 strings with 6749 characters,
+            718 strings with 6667 characters,
 and the built_in function-call counts, 36103 in all, are:
 = -- 5753
 > -- 560
