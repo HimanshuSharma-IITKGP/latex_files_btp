@@ -16,14 +16,17 @@
 \RequirePackage{xcolor}
 \RequirePackage{bm}
 \RequirePackage{natbib}
-\usepackage{tabularx}
-\usepackage{indentfirst}
-\usepackage{lipsum}
-\usepackage{xcolor}
+\RequirePackage{tabularx}
+\RequirePackage{indentfirst}
+\RequirePackage{lipsum}
+\RequirePackage{xcolor}
+\RequirePackage{nomencl}
 
+
+\makenomenclature
 %% Color 
 \definecolor{citationColor}{RGB}{0,127,172}
-\definecolor{linkColor}{RGB}{0, 0, 255}
+\definecolor{linkColor}{RGB}{0, 100, 100}
 \hypersetup{ colorlinks=true, linkcolor=linkColor, citecolor=citationColor}
 
 \graphicspath{{./figures/}}
@@ -31,7 +34,6 @@
 
 \newcommand{\note}[1]{{(\textcolor{red}{#1})}}
 \renewcommand{\implies}{\Longrightarrow}
-
 
 \newenvironment{nonumbereq}
     {$
@@ -124,13 +126,7 @@
         0 && 0  && #1_{33}
     \end{bmatrix}
 }
-\newcommand{\tensorxy}[1]{
-    \begin{bmatrix}
-        #1_{xx} && #1_{xy}  && 0 \\
-        #1_{yx} && #1_{yy}  && 0 \\
-        0 && 0  && #1_{zz}
-    \end{bmatrix}
-}
+
 
 
 
@@ -171,7 +167,7 @@
 \newpage
 }
 
-\def\mytitle{Paper}
+\def\mytitle{On Artifical SEI Layer in Li-ion Batteries}
 \def\myname{Himanshu Sharma}
 \def\mydegree{Dual Degree (B.Tech + M.Tech)}
 \def\mysupervisor{Dr. Jeevanjyoti Chakraborty}
@@ -179,4 +175,3 @@
 \def\mydep{Mechanical Engineering}
 \def\mydegreedate{Autumn Semester, 2024-2025}
 %%%%
-

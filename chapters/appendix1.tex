@@ -1,4 +1,4 @@
-\chapter{Equations in Component Form}
+\chapter{Equations in Component Form for COMSOL}
 In the development of following equations only non-zero components of various tensors are mentioned.\\
 Introducing $\tX$, $\tY$, $\tu$ and $\tv$ in equation \ref{eq:F_tensor}, the component of $\F$ are 
 \begin{align}
@@ -59,7 +59,10 @@ Using \ref{eq:M_tensor}
     \td{\mu}_s &= \frac{1}{R_g T} \mu_s \\
         &= \fc{V_m^b}{R_g T \xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}{C}_{mnkl}\tEel{kl} + \fc{1}{2}\left(\jc \pdiff{C_{ijkl}}{\tc} + \pdiff{\jc}{\tc} C_{ijkl}\right)\tEel{ij}\tEel{kl}\right] \nonumber \\ 
         &= \fc{1}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}{\td{C}}_{mnkl}\tEel{kl} + \fc{1}{2}\left(\jc \pdiff{\td{C}_{ijkl}}{\tc} + \pdiff{\jc}{\tc} \td{C}_{ijkl}\right)\tEel{ij}\tEel{kl}\right] \\
-    \td{C}_{ijkl} \tEel{kl} &= \tPel{ij}  = \tSel{ij}/\jc \\
+    \td{C}_{ijkl} \tEel{kl} &= \tPel{ij}  = \tSel{ij}/\jc
+\end{align} 
+    \text{\note{Above equation is correct only for how I am writing equations in COMSOL}}
+\begin{align}
     \Longrightarrow \td{C}_{ijkl} &= \td{\lambda}_{si}(\tc)\delta_{ij} \delta_{kl} +  \td{\mu}_{si}(\tc)(\delta_{ik} \delta_{jl} + \delta_{il} \delta_{jk})  \\
     \td{\mu}_s &= \fc{1}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}\tPel{mn} + \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} + \fc{1}{2} \pdiff{\jc}{\tc} \td{C}_{ijkl}\tEel{ij}\tEel{kl}\right] \nonumber\\
     &= \fc{1}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\tFel{im}\tFel{in}\tPel{mn} + \fc{1}{2}\jc \pdiff{\td{C}_{ijkl}}{\tc}\tEel{ij}\tEel{kl} + \fc{1}{2} \pdiff{\jc}{\tc} \tEel{ij}\tPel{kl}\right] \nonumber\\

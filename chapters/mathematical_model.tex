@@ -16,7 +16,7 @@ The total deformation gradient is denoted by $\F$. Therefore,
 \end{align} 
 where $\I$ is the second-order isotropic tensor.
 
-Let $\{\hat{\bm{e}}_1, \hat{\bm{e}}_2, \hat{\bm{e}}_3\}$ be the orthonormal basis in the reference configuration. Corresponding components of $\X$ are denoted by $X$, $Y$ and $Z$ and that of $\u$ by $u$, $v$ and $w$. In the present study, plane strain deformation is assumed. Therefore, the components of F are given by \citep{2009ContMechLai} 
+Let $\{\hat{\bm{e}}_1, \hat{\bm{e}}_2, \hat{\bm{e}}_3\}$ be the orthonormal basis in the reference configuration. The corresponding components of $\X$ are denoted by $X$, $Y$ and $Z$ and that of $\u$ by $u$, $v$ and $w$. In the present study, plane strain deformation is assumed. Therefore, the components of $\F$ are given by \citep{2009ContMechLai} 
 \begin{align}
 [\F] = 
 \begin{bmatrix}
@@ -25,7 +25,7 @@ Let $\{\hat{\bm{e}}_1, \hat{\bm{e}}_2, \hat{\bm{e}}_3\}$ be the orthonormal basi
        0 && 0 && 1
 \end{bmatrix} = \tensor{F}. \label{eq:F_tensor}
 \end{align}
-Both Inelastic and elastic deformation gradients are considered finite \citep{2011JMPSBower}. Hence, a multiplicative decomposition of $\F$ into elastic and inelastic deformation is necessary. As shown in figure \ref{fig:decomposition}, the body is first considered to reach an intermediate stress-free state, and then it undergoes an elastic deformation to reach the current configuration. As derived by \citet{1969Lee}, the total deformation gradient   
+Both Inelastic, present only in Si, and elastic deformation gradients are considered finite \citep{2011JMPSBower}. Hence, a multiplicative decomposition of $\F$ into elastic and inelastic deformation is necessary. As shown in figure \ref{fig:decomposition}, the body is first considered to reach an intermediate stress-free state, and then it undergoes an elastic deformation to reach the current configuration. As derived by \citet{1969Lee}, the total deformation gradient   
 \begin{gather}
 \F = \F^{\el} \cdot  \F^{\inel} \label{eq:F_decomposition}, \\
 \text{where } \F^{\el} = \pdiff{\x}{\x_{\rm{I}}} \text{ and } \F^{\inel} = \pdiff{\x_{{\rm{I}}}}{\X} \nonumber.
@@ -41,10 +41,10 @@ $\x_{\rm{I}}(\X, t)$ is the position of a material particle in the intermediate 
 The inelastic deformation gradient tensor, $\F^{\inel}$, has contributions from two sources. It is further decomposed as 
 \begin{gather}
     \F^\inel = \F^\c \cdot \F^\p, \label{eq:Finel_decomposition}
-\end{gather}where $\F^\c$ and $\F^\p$ are deformation gradients due to diffusion and plastic flow, respectively.
+\end{gather}where $\F^\c$ and $\F^\p$ are deformation gradients due to diffusion and plastic flow, respectively; Both $\F^\c$ and $\F^\p$ are defined only in the Li$_\chi$Si.
 
-\section{Viscoplastic Flow}
-A viscoplastic constitutive relation of the following form is considered:
+\section{Viscoplastic Flow of Li$_\chi$Si}
+A viscoplastic constitutive relation of the following form is considered for Li$_\chi$Si:
 \begin{gather}
 \DP = \pdiff{G(\sigmaeff)}{\DCS},
 \end{gather}
@@ -54,12 +54,12 @@ Various studies \citep{2011JMPSBower,2012JMPSCui} have adopted a power law of th
 G(\sigmaeff) &= \fc{\sigmaf \dZEROdot}{m+1}\left(\fc{\sigmaeff}{\sigmaf}-1\right)^{m+1}\heavi \\
 \Rightarrow \mathbf{D}^{\rm{P}} &= \fc{3 \DCS \dZEROdot}{2 \sigmaeff}\left(\fc{\sigmaeff}{\sigmaf}-1\right)^{m}\heavi.
 \end{align}
-Where $\sigmaeff$ is the effective von Mises stress, defined in section \ref{section:MechEqbm}, H is the unit step function, $\sigmaf$ is the yield strength of Silicon, m is the stress exponent for plastic flow and $\dZEROdot$ is the strain rate for plastic flow. Considering an irrotational plastic flow \citep{2005JMPSGurtin, 2005IJPGurtin,2023IJSSAmit} 
+Where $\sigmaeff$ is the effective von Mises stress (defined in section \ref{section:MechEqbm}) H is the unit step function, $\sigmaf$ is the yield strength of Li$_\chi$Si \note{check if I should write Si or Li$_\chi$Si here}, m is the stress exponent for plastic flow and $\dZEROdot$ is the strain rate for plastic flow. Considering an irrotational plastic flow \citep{2005JMPSGurtin, 2005IJPGurtin,2023IJSSAmit} 
 \begin{align}
 \mathbf{D}^{\rm{P}} &= \F^{\el} \cdot \F^{\rm{c}} \cdot \dot{\F}^\p \cdot \inv{\F^\p} \cdot \inv{\F^{\rm{c}}} \cdot \inv{\F^{\el}}  \\
 \Rightarrow \dot{\F}^\p &= \inv{J} \fc{3}{2} \fc{\Mel \cdot \F^\p}{\sigmaeff} \dZEROdot \left( \fc{\sigmaeff}{\sigmaf} - 1 \right)^m \heavi, \\
-\text{where }\Mel &= J (\F^\el)^\T \cdot \DCS \cdot (\F^\el)^\mT \label{eq:M_tensor} \\
-\text{and} J &= \mathrm{det}(\F). 
+\text{where }\Mel &= J (\F^\el)^\T \cdot \DCS \cdot (\F^\el)^\mT \label{eq:M_tensor},  \\
+\text{and } J &= \mathrm{det}(\F). 
 \end{align}
 $\Mel$ is the deviatoric part of Mandel stress \citep{1971Mandel}. The expression for Mandel stress is 
 \begin{nonumbereq}
@@ -73,25 +73,31 @@ Since det($\F^\p$) = 1,
 \begin{nonumbereq}
      \lamzz = 1/(\lamxx \lamyy - \lamxy \lamyx).
 \end{nonumbereq} \\
-$\sigmaf$ is yield strength defined as 
-\[ \sigmaf =  \begin{cases} 
-      \sigma_{f, \si} & \text{ for Silicon} \, \, (-L/2 \le X \le L/2 {\rm{ \quad and \quad}} 0 \le Y \le H) \\
-      \sigma_{f, {\rm{SEI}}} & \text{ for SEI layer} \, \, (-L/2 \le X \le L/2 {\rm{ \quad and \quad}} 0 \le Y \le H+H_{\rm{SEI}})
-   \end{cases}
-\]
+% $\sigmaf$ is yield strength defined as 
+% \[ \sigmaf =  \begin{cases} 
+%       \sigma_{f, \si} & \text{ for Silicon} \, \, (-L/2 \le X \le L/2 {\rm{ \quad and \quad}} 0 \le Y \le H) \\
+%       \sigma_{f, {\rm{SEI}}} & \text{ for SEI layer} \, \, (-L/2 \le X \le L/2 {\rm{ \quad and \quad}} 0 \le Y \le H+H_{\rm{SEI}})
+%    \end{cases}
+% \]
+In order to simplify the modelling of mechanical equilibrium in both Si and SEI using the same equations (described in \ref{section:MechEqbm}), $\F^\p = \I$ in the SEI layer is considered.
 
-
-\section{Diffusion Induced Deformation}
+\section{Diffusion Induced Deformation of Li$_\chi$Si}
 The SEI layer is taken to be completely permeable to lithiation. So, diffusion only takes place inside the Silicon film. Therefore, for the purpose of modelling $\tc$ is taken zero in the SEI, making $\F^\c=\I$ in the SEI.\\ 
 The compound between Lithium and Silicon is $\text{Li}_{\chi}$Si. Let the stoichiometric concentration and maximum concentration of Lithium ions per atom of Silicon be denoted by $\chi_0$ and $\chi_{\rm{max}}$. Defining a non-dimensional Li-ion concentration measure as $\tc = (\chi-\chi_{0})/\xmax$. Since $\chi_{0}$ is the stoichiometric ratio, it signifies the stress-free state; hence, $\tc$ is a measure of the deviation of the particle from the undeformed state. The deformation due to lithiation is quantified by an isotropic deformation gradient denoted by $\F^\c$ and given by
 \begin{gather}
     \F^\c = (\jc)^{1/3} \I,
 \end{gather}
 where \begin{nonumbereq}\jc = 1 + 3 \eta \xmax \tc\end{nonumbereq} is the volumetric change experienced by the Silicon film upon insertion of Li-ions. $\eta$ is a material parameter giving the rate of change in volume w.r.t. $\tc$. It may be noted that as $\tc$ approaches 1, $\mathrm{det}(\F^\c)$ approaches 4. Therefore, the body undergoes a volumetric change of about 300\% due to the diffusion of Li-ions, justifying large deformation analysis.
+
+
 \section{Mechanical Equilibrium } \label{section:MechEqbm}
-From equations \ref{eq:F_decomposition} and \ref{eq:Finel_decomposition},
+
+Attributing to the assumption of an elastic and permeable SEI, using eqs. \ref{eq:F_decomposition}  and \ref{eq:Finel_decomposition}
 \begin{align}
-    \F^{\el} &=  \F \cdot \inv{\F^{\c} \cdot \F^{\p}}. \label{eq:Fel_tensor}
+    \F^{\el} &=  \begin{cases}
+        \F \cdot \inv{\F^{\c} \cdot \F^{\p}} & \text{for Li$_\chi$Si } \\
+        \F & \text{for SEI}
+    \end{cases} \label{eq:Fel_tensor}
 \end{align}
 The elastic Green-Lagrange strain is
 \begin{nonumbereq}
@@ -128,6 +134,7 @@ The elastic second Piola-Kirchhoff stress, which can be \textit{visualized} as t
     \PKS^\el &= \pdiff{\hat{w}(\F, \tc)}{\E^{\el}}\nonumber \\
     \implies  \PKS^\el &= \lamSic \tr{\E^\el}\I + 2 \muSic \E^\el. \label{eq:Sel_tensor}
 \end{align}
+\note{note that in COMSOL, $\PKS^{\el} = \jc \left[ \lamSic \tr{\E^\el}\I + 2 \muSic \E^\el \right]$. This affects how the equations for $\mu$ are written.}\\
 Let $\PKS$ denote the second Piola-Kirchhoff stress. Now, by pulling back $\PKS^{\el}$ from the intermediate configuration to the reference configuration \citep{2010Gurtin} the second Piola-Kirchhoff stress is obtained as
 \begin{align}
     \PKS = J^{\inel} \, \inv{\F^\inel} \cdot  \PKS^\el \cdot  \invT{\F^\inel} &= \jc \, \inv{\F^{\p} \cdot \F^{\c}} \cdot \PKS^{\el} \cdot \invT{\F^\p \cdot \F^\c}\nonumber\\
@@ -151,7 +158,9 @@ In the absence of any body forces, the conservation of momentum leads to
 \bm{\nabla}_\X \cdot \PK = 0.
 \end{gather}
 
-\section{Diffusion}
+
+\section{Diffusion in Li$_\chi$Si}
+
 Assuming flux to be negligible in the $z$ direction, the conservation of mass is expressed as
 \begin{gather}
     \pdiff{c}{t} = - \bm{\nabla}_\X \cdot \bm{j} = -\left(\pdiff{j_X}{X} + \pdiff{j_Y}{Y}\right),
@@ -164,7 +173,7 @@ In the current configuration, the flux is denoted by $\bm{\hat{j}}(\x, t)$ and i
 \begin{gather}
     \bm{\hat{j}}(\x, t) = -\fc{1}{R_g T} \fc{D \xmax \tc}{\vmb} \nabla_{\x} \mu,
 \end{gather} 
-where $R_g$ is the universal gas constant, $T$ is the operating temperature, $D$ is the diffusivity of Li$_{\chi}$Si, $\vmb$ is the partial molar volume of Silicon and $\mu$ is the chemical potential. Diffusivity is related to the state of stress by the following equation:
+where $R_g$ is the universal gas constant, $T$ is the operating temperature, $D$ is the diffusivity of Li$_{\chi}$Si, $\vmb$ is the partial molar volume of Silicon and $\mu$ is the chemical potential. Diffusivity is related to the state of stress by the following equation \citep{2011JPSHaftbaradaran} :
 \begin{gather} 
  D = D_0 {\rm{exp}}\left(\fc{\alpha S_h}{E_0}\right) = D_0 {\rm{exp}}\left(\alpha \frac{{S}_{11}+{S}_{33}}{2 E_0}\right), 
 \end{gather}
@@ -187,10 +196,11 @@ From above equations, the flux vector in Lagrangian description is expressed as
 \end{align}
 The chemical potential $\mu$ is composed of two parts: $\mu = \mu_0 + \mu_{\rm{s}}$, where $\mu_0$ and $\mu_{\rm{s}}$ are the stress-independent and stress-dependent part, respectively. $\mu_0$ can be written as \begin{nonumbereq}
    \mu_0 = R_g T \rm{log}(\gamma \tc), 
-\end{nonumbereq} where $\gamma$ is the activity coefficient and considered to be concentration dependent, given by the following equation:
+\end{nonumbereq} where $\gamma$ is the activity coefficient and considered to be concentration dependent, given by the following equation \citep{2011JPSHaftbaradaran}:
 \begin{align}
-    \gamma &= \fc{1}{1-\td{c}}\text{exp}(\fc{1}{R_g T}[2(A_0 - 2B_0)\td{c} - 3(A_0 - B_0)(\td{c}^2)]).
+    \gamma &= \fc{1}{1-\td{c}}\text{exp}\left(\fc{1}{R_g T}[2(A_0 - 2B_0)\td{c} - 3(A_0 - B_0)\td{c}^2]\right).
 \end{align}
+Where $A_0$ and $B_0$ are constants which were determined by \citet{2010JPSShenoy} using first principles.
 The stress-dependent part of the chemical potential is \citep{2012JMPSCui}
 \begin{align}
     \mu_s &= \fc{V_m^b}{\xmax}\left[-\fc{1}{3}\pdiff{\jc}{\tc}\Fel{im}\Fel{in}{C}_{mnkl}\Eel{kl} + \fc{1}{2}\left(\jc \pdiff{C_{ijkl}}{\tc} + \pdiff{\jc}{\tc} C_{ijkl}\right)\Eel{ij}\Eel{kl}\right].
@@ -203,15 +213,15 @@ State of charge (soc) is a measure of the degree of lithiation. It is expressed 
 \end{align}
 
 \section{Non-dimensionalisation}\label{section:nonDim}
+As a notation, let $\tilde{(\cdot)}$ denote the non-dimensional variable corresponding to the phyical quantity denoted by $(\cdot)$.
 \begin{align}
-    \td{j}_X, \td{j}_Y, \td{J}_0, \td{\bm{j}} &=  \fc{H \vmb}{(\xmax D_0)} (j_X, j_y, J_0, \bm{j}) \\
     \tX, \tY, \tu, \tv &= \fc{1}{H}(X, Y, u, v) \\
     \td{t} &= D_0 t/H^2 \\
-     \tmusi, \tlamsi, \td{E}_{\text{si}} &= \fc{1}{E_0} (\mu_{\text{si}}, \lambda_{\text{si}}, E_{\text{si}}) 
-     \text{, where }  E_0 = \fc{R_g T}{\vmb} \\
-     \td{\mu}_0, \td{\mu}_1, \td{\mu}_2, \td{\mu}_3 &= \fc{1}{R_g T}(\mu_0, \mu_1, \mu_2, \mu_3) \\
+    \td{j}_X, \td{j}_Y, \td{J}_0, \td{\bm{j}} &=  \fc{H \vmb}{(\xmax D_0)} (j_X, j_y, J_0, \bm{j}) \\
+     \td{\mu}_0, \td{\mu}_s &= \fc{1}{R_g T}(\mu_0, \mu_s) \\
      \td{D} &= \fc{D}{D_0} \\
      \dot{\td{d}}_{0} &= \fc{\dZEROdot H^2}{D_0} \\
+     \tmusi, \tlamsi, \td{E}_{\text{si}} &= \fc{1}{E_0} (\mu_{\text{si}}, \lambda_{\text{si}}, E_{\text{si}}) \text{, where }  E_0 = \fc{R_g T}{\vmb} \\
      \td{\PKS}^{\el}, \td{\PKS}, \td{\PK}, \td{\CS}, \td{\DCS}, \td{\mathbf{M}}^{\el}_{0}, \td{\sigma}_{\rm{eff}}, \td{\sigma}_{\rm{f}} &= \fc{1}{E_0}(\PKS^{\el}, \PKS, \PK, \CS, \DCS, \mathbf{M}^{\el}_{0}, \sigmaeff, \sigmaf)
 \end{align}
 
@@ -237,8 +247,8 @@ The bottom face is considered fixed, and the two sides can only exhibit motion i
 \end{align}
 There is a flux from the top surface, which is considered to be of the following form: 
 \begin{align}
-    \text{During Lithiation, }\td{j}_x(\tX, 1, \tt) &= \td{J}_0 (1 - \tc(\tX, 1, \tt)) \text{ and } \\
-    \text{During Delithiation, }\td{j}_x(\tX, 1, \tt) &= -\td{J}_0 \tc(\tX, 1, \tt).
+    \text{During Lithiation, }\td{j}_y(\tX, 1, \tt) &= \td{J}_0 (1 - \tc(\tX, 1, \tt)) \text{ and } \\
+    \text{During Delithiation, }\td{j}_y(\tX, 1, \tt) &= -\td{J}_0 \tc(\tX, 1, \tt).
 \end{align} 
 \vspace{4em}
 \begin{table}[H]
@@ -248,18 +258,27 @@ There is a flux from the top surface, which is considered to be of the following
 \hline
  {Material property or parameter} & {Value} \\
 \hline
-$D_0$, Diffusivity of Silicon & $10^{-16}$ m$^{2}$s$^{-1}$ \\
-$E_{\si}$, Elastic modulus of pure silicon & 90 GPa \\
-$E_{\rm{SEI}}$, Elastic modulus of SEI layer & 3-10 GPa \\
-$\nu_{\si}$, Poisson's ratio of pure Silicon & 0.22\\
-$\nu_{\rm{SEI}}$, Poisson's ratio of SEI layer & 0.30\\
-$\sigma_{f,\si}$, Yield strength of pure Silicon & 1.5GPa\\
-$\sigma_{f, {\rm{SEI}}}$, Yield strength of SEI layer & \\
-$R_g$, Universal gas constant & 8.314 JK$^{-1}$mol$^{-1}$\\
-$T$, Temperature & 298.15 K\\
-$H$, Initial height of Silicon thin film & 200 $\mu$m\\
-$L$, Initial length of Silicon thin film & 20 $\mu$m\\
-$H_{\rm{SEI}}$, Initial length of SEI layer & 10 $\mu$m
+$D_0$, diffusivity of pure Silicon & $10^{-16}$ m$^{2}$s$^{-1}$ \\
+$\alpha$, coefficient of diffusivity & 0.18\\
+$A_0$, parameter used in activity coefficient & $-$29549 Jmol$^{-1}$\\
+$B_0$, parameter used in activity coefficient & $-$38618 Jmol$^{-1}$\\
+$\vmb$, molar volume of Silcon & 1.2052 $\times$ 10$^{-5}$ m$^3$mol$^{-1}$ \\
+$\xmax$, maximum concentration of Li in Si & 4.4 \\
+$\eta$, coefficient of compositional expansion & 0.2356 \\
+$\eta_E$, rate of change of elastic modulus of Li$_\chi$Si with $\tc$&  -0.1464\\
+$\td{J}_0$, \note{parameter used in flux boundary condition} & 0.1  \\ 
+$R_g$, universal gas constant & 8.314 JK$^{-1}$mol$^{-1}$\\
+$T$, temperature & 300 K\\
+$E_{\si}$, elastic modulus of pure silicon & 90.13 GPa \\
+$E_{\rm{SEI}}$, elastic modulus of SEI layer & 3-10 GPa \\
+$\nu_{\si}$, poisson's ratio of pure Silicon & 0.22\\
+$\nu_{\rm{SEI}}$, poisson's ratio of SEI layer & 0.30\\
+$\sigma_{f}$, yield strength of pure Silicon & 1.5GPa\\
+$\dot{d}_0$, characteristic strain rate for plastic flow in Si  & 1 $\times$ 10$^{-3}$ s$^{-1}$\\
+$m$, stress exponent for plastic flow in Si & 4 \\
+$H$, initial height of Silicon thin film & 200 nm\\
+$L$, initial length of Silicon thin film & 2000 nm\\
+$H_{\rm{SEI}}$, initial length of SEI layer & 20 nm
 \end{tabularx}
 \end{table}
 
